@@ -1,29 +1,40 @@
+# Original Code
+
+# def fix_spelling(name)
+#   if name = "twittr"
+#   name = "twitter"
+#   else
+#   fix_spelling(name)
+#   end
+#   return "name"
+# end
 
 
-def fix_spelling(name)
-  if name.downcase == "twitter" || 
-    name.downcase.include?("twit") || 
-    name.downcase.include?("tw") &&
-    name.downcase.include?("t") && 
-    name.downcase.include?("er")
-    if name.length >= 10
-      name = name
-    else
-      name = "Twitter"
-    end
-  else 
-    name = name
-  end
-  name
-end
+# # Check Spelling For Twitter
+# def fix_spelling(name)
+#   if name.downcase.include?("twit") || 
+#     name.downcase.include?("tw") &&
+#     name.downcase.include?("t") && 
+#     name.downcase.include?("er")
+#     if name.length >= 10
+#       name
+#     else
+#       name = "Twitter"
+#     end
+#   else 
+#     name
+#   end
+#   name
+# end
 
-puts fix_spelling("twit")
-puts fix_spelling("twtiter")
-puts fix_spelling("twtter")
-puts fix_spelling("two seater")
-puts fix_spelling("Facebook")
-puts fix_spelling("twittttttttttteradad")
-puts fix_spelling("Thank You for this opportunity, Intercom!")
+# # Test ------------------------------
+# puts fix_spelling("twit")
+# puts fix_spelling("twtiter")
+# puts fix_spelling("TwtTer")
+# puts fix_spelling("two seater")
+# puts fix_spelling("Facebook")
+# puts fix_spelling("twittttttttttteradad")
+# puts fix_spelling("Thank You for this opportunity, Intercom!")
 
 
 
