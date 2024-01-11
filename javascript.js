@@ -24,8 +24,8 @@
 // solution("INeedBurger")
 
 
-function smash(words) {
-  console.log(words.join(" "))
-}
+// function smash(words) {
+//   console.log(words.join(" "))
+// }
 
-smash(["the", "dog", "walked"])
+// smash(["the", "dog", "walked"])
