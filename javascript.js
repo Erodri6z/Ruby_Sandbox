@@ -25,7 +25,7 @@
 
 
 function smash(words) {
-  return ""
+  console.log(words.join(" "))
 }
 
 smash(["the", "dog", "walked"])
