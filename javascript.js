@@ -22,3 +22,10 @@
 // solution("camelCasting")
 // solution("JavaScript")
 // solution("INeedBurger")
+
+
+function smash(words) {
+  return ""
+}
+
+smash(["the", "dog", "walked"])
