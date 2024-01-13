@@ -31,22 +31,22 @@
 // smash(["the", "dog", "walked"])
 
 
-function likes(names) {
-  if (names.length === 0 ){
-    console.log("noone likes you")
-  } else if (names.length === 1) {
-    console.log(`${names[0]} likes you`)
-  } else if (names.length === 2) {
-    console.log(`${names[0]} and ${names[1]} likes you`)
-  } else if (names.length === 3) {
-    console.log(`${names[0]}, ${names[1]} and ${names[2]} likes you`)
-  }else if (names.length > 3) {
-    console.log(`${names[0]}, ${names[1]} and ${names.length - 2} others likes you`)
-  }
-}
+// function likes(names) {
+//   if (names.length === 0 ){
+//     console.log("noone likes you")
+//   } else if (names.length === 1) {
+//     console.log(`${names[0]} likes you`)
+//   } else if (names.length === 2) {
+//     console.log(`${names[0]} and ${names[1]} likes you`)
+//   } else if (names.length === 3) {
+//     console.log(`${names[0]}, ${names[1]} and ${names[2]} likes you`)
+//   }else if (names.length > 3) {
+//     console.log(`${names[0]}, ${names[1]} and ${names.length - 2} others likes you`)
+//   }
+// }
 
-likes([])
-likes(['Peter'])
-likes(['Jacob', 'Alex'])
-likes(['Max', 'John', 'Mark'])
-likes(['Alex', 'Jacob', 'Mark', 'Max'])
+// likes([])
+// likes(['Peter'])
+// likes(['Jacob', 'Alex'])
+// likes(['Max', 'John', 'Mark'])
+// likes(['Alex', 'Jacob', 'Mark', 'Max'])
