@@ -29,3 +29,12 @@
 // }
 
 // smash(["the", "dog", "walked"])
+
+
+function likes(names) {
+  // todo
+}
+
+likes(['Jacob', 'Alex'])
+likes(['Max', 'John', 'Mark'])
+likes(['Alex', 'Jacob', 'Mark', 'Max'])
