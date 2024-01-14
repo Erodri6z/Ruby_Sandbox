@@ -51,22 +51,22 @@
 // likes(['Max', 'John', 'Mark'])
 // likes(['Alex', 'Jacob', 'Mark', 'Max'])
 
-function pigIt(str){
-  let arr = str.split(' ')
-  let latin = arr.map((word) => {
-    let wordArr = word.split("")
-    let first = wordArr.shift()
-    let reg = /[^\w\s]/g
-    wordArr.push(first)
-    if (reg.test(wordArr.join(""))){
-      return wordArr.join("")
-    } else {
-      return `${wordArr.join("")}ay`
-    }
-  })
-  console.log(latin.join(" "))
-}
+// function pigIt(str){
+//   let arr = str.split(' ')
+//   let latin = arr.map((word) => {
+//     let wordArr = word.split("")
+//     let first = wordArr.shift()
+//     let reg = /[^\w\s]/g
+//     wordArr.push(first)
+//     if (reg.test(wordArr.join(""))){
+//       return wordArr.join("")
+//     } else {
+//       return `${wordArr.join("")}ay`
+//     }
+//   })
+//   console.log(latin.join(" "))
+// }
 
 
-pigIt('Pig latin is cool')
-pigIt('Hello world!')
+// pigIt('Pig latin is cool')
+// pigIt('Hello world!')
