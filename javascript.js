@@ -73,10 +73,10 @@
 
 
 
-function filter_list(l) {
-  console.log(l.filter((num) => typeof num === "number"))
-}
+// function filter_list(l) {
+//   console.log(l.filter((num) => typeof num === "number"))
+// }
 
-filter_list([1,2,'a','b'])
-filter_list([1,'a','b',0,15])
-filter_list([1,2,'aasf','1','123',123])
+// filter_list([1,2,'a','b'])
+// filter_list([1,'a','b',0,15])
+// filter_list([1,2,'aasf','1','123',123])
