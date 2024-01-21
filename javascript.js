@@ -82,11 +82,11 @@
 // filter_list([1,2,'aasf','1','123',123])
 
 
-function friend(friend) {
-  console.log(friend.filter((n) => n.length === 4))
-  // console.log(arr)
+// function friend(friend) {
+//   console.log(friend.filter((n) => n.length === 4))
+//   // console.log(arr)
 
-}
+// }
 
-friend(["Ryan", "Kieran", "Mark"])
-friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])
+// friend(["Ryan", "Kieran", "Mark"])
+// friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])
