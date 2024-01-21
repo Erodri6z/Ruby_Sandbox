@@ -83,8 +83,10 @@
 
 
 function friend(friend) {
-
+  console.log(friend.filter((n) => n.length === 4))
+  // console.log(arr)
 
 }
 
 friend(["Ryan", "Kieran", "Mark"])
+friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])
