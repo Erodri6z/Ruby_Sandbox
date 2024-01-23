@@ -98,7 +98,7 @@
 // rowSumOddNumbers(42)
 
 function findShort(s){
-
+  console.log(s.split(' ').map((n) => n.length).sort((a, b) => a - b)[0])
 }
 
 findShort("Let's travel abroad shall we")
