@@ -102,3 +102,11 @@
 // }
 
 // findShort("Let's travel abroad shall we")
+
+function abbrevName(name){
+
+  // code away
+
+}
+
+abbrevName("Evan Cole")
