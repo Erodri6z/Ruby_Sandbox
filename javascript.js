@@ -90,3 +90,15 @@
 
 // friend(["Ryan", "Kieran", "Mark"])
 // friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])
+
+// function rowSumOddNumbers(n) {
+	
+// }
+
+// rowSumOddNumbers(42)
+
+function findShort(s){
+
+}
+
+findShort("Let's travel abroad shall we")
