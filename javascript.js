@@ -104,9 +104,7 @@
 // findShort("Let's travel abroad shall we")
 
 function abbrevName(name){
-
-  // code away
-
+  console.log(name.split(" ").map((n) => n[0]).join("."))
 }
 
 abbrevName("Evan Cole")
