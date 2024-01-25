@@ -110,5 +110,15 @@
 // abbrevName("Evan Cole")
 
 function lovefunc(flower1, flower2){
-  // moment of truth
+  if (flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0){
+    console.log("its true love")
+  } else {
+    console.log("it wont last")
+  }
 }
+
+
+lovefunc(1,4)
+lovefunc(2,3)
+lovefunc(2,4)
+lovefunc(0,1)
