@@ -110,11 +110,7 @@
 // abbrevName("Evan Cole")
 
 function lovefunc(flower1, flower2){
-  if (flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0){
-    console.log("its true love")
-  } else {
-    console.log("it wont last")
-  }
+  flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0 ? console.log("True") : console.log("False")
 }
 
 
