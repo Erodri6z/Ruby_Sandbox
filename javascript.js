@@ -109,12 +109,12 @@
 
 // abbrevName("Evan Cole")
 
-function lovefunc(flower1, flower2){
-  flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0 ? console.log("True") : console.log("False")
-}
+// function lovefunc(flower1, flower2){
+//   flower1 % 2 === 0 && flower2 % 2 !== 0 || flower2 % 2 === 0 && flower1 % 2 !== 0 ? console.log("True") : console.log("False")
+// }
 
 
-lovefunc(1,4)
-lovefunc(2,3)
-lovefunc(2,4)
-lovefunc(0,1)
+// lovefunc(1,4)
+// lovefunc(2,3)
+// lovefunc(2,4)
+// lovefunc(0,1)
