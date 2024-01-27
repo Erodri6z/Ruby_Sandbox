@@ -120,8 +120,8 @@
 // lovefunc(0,1)
 
 
-function greet(name){
-  console.log(`Hello, ${name} how are you doing today?`)
-}
+// function greet(name){
+//   console.log(`Hello, ${name} how are you doing today?`)
+// }
 
-greet("erik")
+// greet("erik")
