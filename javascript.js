@@ -118,3 +118,10 @@
 // lovefunc(2,3)
 // lovefunc(2,4)
 // lovefunc(0,1)
+
+
+function greet(name){
+  console.log(`Hello, ${name} how are you doing today?`)
+}
+
+greet("erik")
