@@ -138,6 +138,14 @@
 // solution("Amongus")
 
 function dnaStrand(dna){
+  console.log(dna.replace(/[ATCG}]/g, function (match) {
+    switch (match) {
+      case "A": return "T"
+      case "T": return "A"
+      case "C": return "G"
+      case "G": return "C"
+    }
+  }))
   
 }
 
