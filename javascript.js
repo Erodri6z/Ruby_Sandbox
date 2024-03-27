@@ -127,12 +127,12 @@
 // greet("erik")
 
 
-function solution(str) {
-  let reverse = str.split("").reverse().join("")
-  console.log(reverse)
-}
+// function solution(str) {
+//   let reverse = str.split("").reverse().join("")
+//   console.log(reverse)
+// }
 
 
-solution("world")
-solution("hello")
-solution("Amongus")
+// solution("world")
+// solution("hello")
+// solution("Amongus")
