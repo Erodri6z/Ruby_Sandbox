@@ -154,9 +154,19 @@
 // dnaStrand("GTAT")
 
 var number = function (busStop) {
-  console.log(busStop)
+  let peopleGettingOn = 0
+  let peopleGettingOff = 0
+
+  for (let i = 0; i < busStop.length; i++) {
+
+      peopleGettingOn = peopleGettingOn + busStop[i][0]
+      peopleGettingOff = peopleGettingOff + busStop[i][1]
+    }
+  console.log(peopleGettingOn - peopleGettingOff)
+
 }
 
 number([[1,0],[2,3]])
 number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]])
-number([[1,0],[2,3]])
+number([[10,0],[3,5],[5,8]])
+number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]])
