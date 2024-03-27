@@ -137,18 +137,18 @@
 // solution("hello")
 // solution("Amongus")
 
-function dnaStrand(dna){
-  console.log(dna.replace(/[ATCG}]/g, function (match) {
-    switch (match) {
-      case "A": return "T"
-      case "T": return "A"
-      case "C": return "G"
-      case "G": return "C"
-    }
-  }))
+// function dnaStrand(dna){
+//   console.log(dna.replace(/[ATCG}]/g, function (match) {
+//     switch (match) {
+//       case "A": return "T"
+//       case "T": return "A"
+//       case "C": return "G"
+//       case "G": return "C"
+//     }
+//   }))
   
-}
+// }
 
-dnaStrand("AAAA")
-dnaStrand("ATTGC")
-dnaStrand("GTAT")
+// dnaStrand("AAAA")
+// dnaStrand("ATTGC")
+// dnaStrand("GTAT")
