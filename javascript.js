@@ -152,3 +152,11 @@
 // dnaStrand("AAAA")
 // dnaStrand("ATTGC")
 // dnaStrand("GTAT")
+
+var number = function (busStop) {
+  console.log(busStop)
+}
+
+number([[1,0],[2,3]])
+number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]])
+number([[1,0],[2,3]])
