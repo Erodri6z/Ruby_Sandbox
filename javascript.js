@@ -136,3 +136,11 @@
 // solution("world")
 // solution("hello")
 // solution("Amongus")
+
+function dnaStrand(dna){
+  
+}
+
+dnaStrand("AAAA")
+dnaStrand("ATTGC")
+dnaStrand("GTAT")
