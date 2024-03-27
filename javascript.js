@@ -125,3 +125,13 @@
 // }
 
 // greet("erik")
+
+
+function solution(str) {
+
+}
+
+
+solution("world")
+solution("hello")
+solution("Amongus")
