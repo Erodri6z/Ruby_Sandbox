@@ -172,11 +172,11 @@
 // number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]])
 
 
-function doubleInt(i) {
-  console.log(i * 2)
+// function doubleInt(i) {
+//   console.log(i * 2)
 
-}
+// }
 
-doubleInt(2)
-doubleInt(30)
-doubleInt(10)
+// doubleInt(2)
+// doubleInt(30)
+// doubleInt(10)
