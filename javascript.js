@@ -182,8 +182,8 @@
 // doubleInt(10)
 
 function getCount(str){
-  let vowels = str.replace(/[^aeiou]/gi, "").length
-  console.log(vowels)
+  console.log(str.replace(/[^aeiou]/gi, "").length)
+
 }
 
 getCount("abracadabra")
