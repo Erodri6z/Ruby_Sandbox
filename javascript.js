@@ -148,7 +148,7 @@
 //   }))
   
 // }
-
+ 
 // dnaStrand("AAAA")
 // dnaStrand("ATTGC")
 // dnaStrand("GTAT")
@@ -180,3 +180,10 @@
 // doubleInt(2)
 // doubleInt(30)
 // doubleInt(10)
+
+function getCount(str){
+  return 
+}
+
+getCount("abracadabra")
+getCount("amongus")
