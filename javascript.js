@@ -173,6 +173,7 @@
 
 
 function doubleInt(i) {
+  console.log(i * 2)
 
 }
 
