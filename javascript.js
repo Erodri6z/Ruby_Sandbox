@@ -181,10 +181,10 @@
 // doubleInt(30)
 // doubleInt(10)
 
-function getCount(str){
-  console.log(str.replace(/[^aeiou]/gi, "").length)
+// function getCount(str){
+//   console.log(str.replace(/[^aeiou]/gi, "").length)
 
-}
+// }
 
-getCount("abracadabra")
-getCount("amongus")
+// getCount("abracadabra")
+// getCount("amongus")
