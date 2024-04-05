@@ -189,35 +189,35 @@
 // getCount("abracadabra")
 // getCount("amongus")
 
-function comp(ar1, ar2) {
-  function check(v1, v2) {
-    return v1 === Math.sqrt(v2) || Math.sqrt(v1) === v2 || v1 === v2 ** 2 || v2 === v1 **2
-  }
-  let tempArr2 = [...ar2]
+// function comp(ar1, ar2) {
+//   function check(v1, v2) {
+//     return v1 === Math.sqrt(v2) || Math.sqrt(v1) === v2 || v1 === v2 ** 2 || v2 === v1 **2
+//   }
+//   let tempArr2 = [...ar2]
 
-  const condition1 = ar1.every(v1 => {
-    let index = tempArr2.findIndex(v2 => check(v1,v2))
-    if (index !== -1) {
-      tempArr2.splice(index, 1)
-      return true
-    }
-    return false
-  })
+//   const condition1 = ar1.every(v1 => {
+//     let index = tempArr2.findIndex(v2 => check(v1,v2))
+//     if (index !== -1) {
+//       tempArr2.splice(index, 1)
+//       return true
+//     }
+//     return false
+//   })
 
-  let tempArr1 = [...ar1]
-  const condition2 = ar2.every(v1 => {
-    let index = tempArr1.findIndex(v2 => check(v1, v2))
-    if (index !== -1) {
-      tempArr1.splice(index,1)
-      return true
-    }
-    return false 
-  } )
+//   let tempArr1 = [...ar1]
+//   const condition2 = ar2.every(v1 => {
+//     let index = tempArr1.findIndex(v2 => check(v1, v2))
+//     if (index !== -1) {
+//       tempArr1.splice(index,1)
+//       return true
+//     }
+//     return false 
+//   } )
 
-  console.log(condition1 && condition2)
-}
+//   console.log(condition1 && condition2)
+// }
 
-let a = [121, 144, 19, 161, 19, 144, 19, 11]  
-let b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
+// let a = [121, 144, 19, 161, 19, 144, 19, 11]  
+// let b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
 
-comp([2,2,3], [4,9,9])
+// comp([2,2,3], [4,9,9])
