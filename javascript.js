@@ -190,10 +190,15 @@
 // getCount("amongus")
 
 function comp(ar1, ar2) {
-
+  function check(v1, v2) {
+    return v1 === Math.sqrt(v2) || Math.sqrt(v1) === v2 || v1 === v2 ** 2 || v2 === v1 **2
+  }
+  const condition1 = ar1.every(v1 => ar2.some(v2 => check(v1, v2)))
+  const condition2 = ar2.every(v2 => ar1.some(v1 => check(v1, v2)))
+  console.log(condition1 && condition2)
 }
 
-a = [121, 144, 19, 161, 19, 144, 19, 11]  
-b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
+let a = [121, 144, 19, 161, 19, 144, 19, 11]  
+let b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
 
 comp(a, b)
