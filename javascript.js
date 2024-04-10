@@ -221,3 +221,11 @@
 // let b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
 
 // comp([2,2,3], [4,9,9])
+
+var uniqueInOrder=function(iterable) {
+
+}
+
+uniqueInOrder('AAAABBBCCDAABBB')
+uniqueInOrder('ABBCcAD')
+uniqueInOrder([1,2,2,3,3])   
