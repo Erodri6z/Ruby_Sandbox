@@ -222,19 +222,19 @@
 
 // comp([2,2,3], [4,9,9])
 
-var uniqueInOrder=function(iterable) {
-  const arr = []
-  // const a = iterable.split("")
-  for (let i = 0; i < iterable.length; i++){
-    if (i === 0 || iterable[i] !== iterable[i - 1]){
-      arr.push(iterable[i])     
-    } 
-  }
-  console.log(arr)
-}
+// var uniqueInOrder=function(iterable) {
+//   const arr = []
+//   // const a = iterable.split("")
+//   for (let i = 0; i < iterable.length; i++){
+//     if (i === 0 || iterable[i] !== iterable[i - 1]){
+//       arr.push(iterable[i])     
+//     } 
+//   }
+//   console.log(arr)
+// }
 
 
 
-uniqueInOrder('AAAABBBCCDAABBB')
-uniqueInOrder('ABBCcAD')
-uniqueInOrder([1,2,2,3,3])   
+// uniqueInOrder('AAAABBBCCDAABBB')
+// uniqueInOrder('ABBCcAD')
+// uniqueInOrder([1,2,2,3,3])   
