@@ -238,3 +238,12 @@
 // uniqueInOrder('AAAABBBCCDAABBB')
 // uniqueInOrder('ABBCcAD')
 // uniqueInOrder([1,2,2,3,3])   
+
+
+function removeSmallest(numbers) {
+  return []
+}
+
+removeSmallest([1, 2, 3, 4, 5])
+removeSmallest([5, 3, 2, 1, 4])
+removeSmallest([2, 2, 1, 2, 1])
