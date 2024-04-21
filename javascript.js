@@ -241,7 +241,14 @@
 
 
 function removeSmallest(numbers) {
-  return []
+  numbers.forEach(n => {
+    if (n < 1000000){
+      small = n
+    }
+  })
+  let smallest = numbers.indexOf(small)
+  numbers.splice(smallest, 1)
+  console.log(numbers)
 }
 
 removeSmallest([1, 2, 3, 4, 5])
