@@ -254,3 +254,13 @@
 // removeSmallest([1, 2, 3, 4, 5])
 // removeSmallest([5, 3, 2, 1, 4])
 // removeSmallest([2, 2, 1, 2, 1])
+
+
+
+function disemvowel(str) {
+
+}
+
+disemvowel("What are you, a communist?")
+disemvowel("GTFO bruh")
+disemvowel("You Suck")
