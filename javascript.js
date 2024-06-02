@@ -265,3 +265,8 @@
 // disemvowel("What are you, a communist?")
 // disemvowel("GTFO bruh")
 // disemvowel("You Suck")
+
+
+function high(x) {
+
+}
