@@ -267,23 +267,23 @@
 // disemvowel("You Suck")
 
 
-function high(x) {
-  let xArr = x.split(' ')
-  let alphaArr = 'abcdefghijklmnopqrstuvwxyz'.split('')
-  let maxScore = 0
-  let highWord = ''
+// function high(x) {
+//   let xArr = x.split(' ')
+//   let alphaArr = 'abcdefghijklmnopqrstuvwxyz'.split('')
+//   let maxScore = 0
+//   let highWord = ''
 
-  for (let i = 0; i < xArr.length; i++){
-    let points = 0
-    for (let y = 0; y < xArr[i].length; y ++){
-      points += alphaArr.indexOf(xArr[i][y]) + 1
-    }
-    if (points > maxScore) {
-      maxScore = points
-      highWord = xArr[i]
-    }
-  }
-  console.log(highWord)
-}
+//   for (let i = 0; i < xArr.length; i++){
+//     let points = 0
+//     for (let y = 0; y < xArr[i].length; y ++){
+//       points += alphaArr.indexOf(xArr[i][y]) + 1
+//     }
+//     if (points > maxScore) {
+//       maxScore = points
+//       highWord = xArr[i]
+//     }
+//   }
+//   console.log(highWord)
+// }
 
-high('ab cde fghi')
+// high("qnzytqlaojztvulaxicad jegdsdblaczsionzawgjg ffiyhrltmmfwqtxgmjgum zbxgfevksunopigcshhgq")
