@@ -258,7 +258,8 @@
 
 
 function disemvowel(str) {
-
+  let rex = /[aeiouAEIOU]/gi
+  console.log(str.replace(rex, ''))
 }
 
 disemvowel("What are you, a communist?")
