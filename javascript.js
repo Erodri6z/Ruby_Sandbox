@@ -257,11 +257,11 @@
 
 
 
-function disemvowel(str) {
-  let rex = /[aeiouAEIOU]/gi
-  console.log(str.replace(rex, ''))
-}
+// function disemvowel(str) {
+//   let rex = /[aeiouAEIOU]/gi
+//   console.log(str.replace(rex, ''))
+// }
 
-disemvowel("What are you, a communist?")
-disemvowel("GTFO bruh")
-disemvowel("You Suck")
+// disemvowel("What are you, a communist?")
+// disemvowel("GTFO bruh")
+// disemvowel("You Suck")
