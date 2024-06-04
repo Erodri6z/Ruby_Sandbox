@@ -289,7 +289,12 @@
 // high("qnzytqlaojztvulaxicad jegdsdblaczsionzawgjg ffiyhrltmmfwqtxgmjgum zbxgfevksunopigcshhgq")
 
 const reverseSeq = n =>   {
-  
+  let arr = []
+  while (n > 0) {
+    arr.push(n)
+    n--
+  } 
+  console.log(arr)
 }
 
-reverseSeq(3)
+reverseSeq(5)
