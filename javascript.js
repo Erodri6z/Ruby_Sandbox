@@ -287,3 +287,9 @@
 // }
 
 // high("qnzytqlaojztvulaxicad jegdsdblaczsionzawgjg ffiyhrltmmfwqtxgmjgum zbxgfevksunopigcshhgq")
+
+const reverseSeq = n =>   {
+  
+}
+
+reverseSeq(3)
