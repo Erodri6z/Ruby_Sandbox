@@ -298,3 +298,10 @@
 // }
 
 // reverseSeq(5)
+
+function isTriangle(a, b, c) {
+
+}
+
+isTriangle(7,2,2)
+isTriangle(1,2,2)
