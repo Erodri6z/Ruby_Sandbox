@@ -299,8 +299,14 @@
 
 // reverseSeq(5)
 
-function isTriangle(a, b, c) {
-
+function isTriangle(a,b,c) {
+  if(a <= 0 ||b <= 0 || c <= 0) {
+    console.log("false")
+  }else if ((a + b) > c && (a + c) > b && (c + b) > a) {
+    console.log("true")
+  }else {
+    console.log("false")
+  }
 }
 
 isTriangle(7,2,2)
