@@ -309,5 +309,14 @@
 //   }
 // }
 
+
+
+
 // isTriangle(7,2,2)
 // isTriangle(1,2,2)
+
+function count(string){
+  return {}
+}
+
+count('abaabaabb')
