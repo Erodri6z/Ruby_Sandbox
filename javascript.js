@@ -337,3 +337,9 @@
 // }
 
 // count('abaabaabb')
+
+function stray(numbers){
+  return 0
+}
+
+stray([1,1,2])
