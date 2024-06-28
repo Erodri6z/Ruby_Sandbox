@@ -1,0 +1,15 @@
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/bin/Debug/net8.0/c#sharp
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/bin/Debug/net8.0/c#sharp.deps.json
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/bin/Debug/net8.0/c#sharp.runtimeconfig.json
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/bin/Debug/net8.0/c#sharp.dll
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/bin/Debug/net8.0/c#sharp.pdb
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.AssemblyInfoInputs.cache
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.AssemblyInfo.cs
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.csproj.CoreCompileInputs.cache
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.sourcelink.json
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.dll
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/refint/c#sharp.dll
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.pdb
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/c#sharp.genruntimeconfig.cache
+/home/erik/code/personal-projects/coding_challange_sandbox/c#sharp/obj/Debug/net8.0/ref/c#sharp.dll
