@@ -2,28 +2,19 @@
 
 public class Program
 {
-    // public static int SumOfIntegers(params int[] numbers)
-    // {
-    //     int sum = 0;
-    //     foreach (int number in numbers)
-    //     {
-    //         sum += (number * number);
-    //     }
-    //     return sum;
-    // }
-
-    public static double SumArray(double[] array)
+    public static double SumArray(params double[] array)
     {
-      
+      double sum = 0;
+      foreach(double n in array)
+      {
+        sum += n;
+      }
+      return sum;
     }
 
     public static void Main()
-    // {
-    //     int result = SumOfIntegers(5,3,4);
-    //     Console.WriteLine(result);  
-    // }
     {
-      int result = SumArray(2,3,4,5)
-      Console.WriteLine(result)    
+      double result = SumArray(2,3,4);
+      Console.WriteLine(result);    
     }
 }
