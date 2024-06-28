@@ -12,9 +12,18 @@ public class Program
     //     return sum;
     // }
 
+    public static double SumArray(double[] array)
+    {
+      
+    }
+
     public static void Main()
     // {
     //     int result = SumOfIntegers(5,3,4);
     //     Console.WriteLine(result);  
     // }
+    {
+      int result = SumArray(2,3,4,5)
+      Console.WriteLine(result)    
+    }
 }
