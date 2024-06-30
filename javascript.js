@@ -348,5 +348,11 @@
 //   console.log(oddOneOut)
 // }
 
-// stray([1,1,2,2,5,5,6,6,3,3,4,5,5,6,6,6,6])
+// stray([1,1,2,2,5,5,6,6,3,3,4,5,5,6,6,6,
 
+function bounchingBall(h, bounce, window){
+
+}
+
+
+bounchingBall(3.0, 0.66, 1.5)
