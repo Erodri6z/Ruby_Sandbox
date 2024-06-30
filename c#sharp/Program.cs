@@ -11,10 +11,15 @@ public class Program
     //   }
     //   return sum;
     // }
+      public static string BooleanToString(bool b)
+  {
+
+  }
 
     public static void Main()
     {
       // double result = SumArray(2,3,4);
-      // Console.WriteLine(result);    
+      string result = BooleanToString(true);
+      Console.WriteLine(result);    
     }
 }
