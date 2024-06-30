@@ -350,23 +350,23 @@
 
 // stray([1,1,2,2,5,5,6,6,3,3,4,5,5,6,6,6,
 
-function bouncingBall(h, bounce, window){
-  let count = 0
-  if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) {
-    count = -1
-  } else {
-    while (h > window){
-      count ++
-      h *= bounce 
-      if (h > window){
-        count++
-      }
-    }
-  }
-  console.log(count)
-}
+// function bouncingBall(h, bounce, window){
+//   let count = 0
+//   if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) {
+//     count = -1
+//   } else {
+//     while (h > window){
+//       count ++
+//       h *= bounce 
+//       if (h > window){
+//         count++
+//       }
+//     }
+//   }
+//   console.log(count)
+// }
 
 
-bouncingBall(3.0, 0.66, 1.5)
-bouncingBall(30.0, 0.66, 1.5)
-bouncingBall(3.0, 1.0, 1.5)
+// bouncingBall(3.0, 0.66, 1.5)
+// bouncingBall(30.0, 0.66, 1.5)
+// bouncingBall(3.0, 1.0, 1.5)
