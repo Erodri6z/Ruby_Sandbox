@@ -2,24 +2,23 @@
 
 public class Program
 {
-    // public static double SumArray(params double[] array)
-    // {
-    //   double sum = 0;
-    //   foreach(double n in array)
-    //   {
-    //     sum += n;
-    //   }
-    //   return sum;
-    // }
-      public static string BooleanToString(bool b)
+  public static string BooleanToString(bool b)
   {
-
+    if (b == true)
+    {
+      return "True";
+    }
+    else
+    {
+      return "False";
+    }
   }
 
     public static void Main()
     {
-      // double result = SumArray(2,3,4);
       string result = BooleanToString(true);
-      Console.WriteLine(result);    
+      string result2 = BooleanToString(false);
+      Console.WriteLine(result);
+      Console.WriteLine(result2);    
     }
 }
