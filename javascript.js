@@ -338,14 +338,15 @@
 
 // count('abaabaabb')
 
-function stray(numbers){
-  let n = numbers.sort()
-  console.log(n)
-  let oddOneOut = 0
-  n.forEach(element => {
-    oddOneOut ^= element
-  });
-  console.log(oddOneOut)
-}
+// function stray(numbers){
+//   let n = numbers.sort()
+//   console.log(n)
+//   let oddOneOut = 0
+//   n.forEach(element => {
+//     oddOneOut ^= element
+//   });
+//   console.log(oddOneOut)
+// }
 
-stray([1,1,2,2,5,5,6,6,3,3,4,5,5,6,6,6,6])
+// stray([1,1,2,2,5,5,6,6,3,3,4,5,5,6,6,6,6])
+
