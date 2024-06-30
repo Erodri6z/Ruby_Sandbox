@@ -2,23 +2,13 @@
 
 public class Program
 {
-  // public static string BooleanToString(bool b)
-  // {
-  //   if (b == true)
-  //   {
-  //     return "True";
-  //   }
-  //   else
-  //   {
-  //     return "False";
-  //   }
-  // }
+  public static int FindSmallestInt(int[] args) 
+  {
 
-    public static void Main()
+  }
+  public static void Main()
     {
-      // string result = BooleanToString(true);
-      // string result2 = BooleanToString(false);
+      int FindSmallestInt(new int[]{11,22,32,454,45})
       Console.WriteLine(result);
-      // Console.WriteLine(result2);    
     }
 }
