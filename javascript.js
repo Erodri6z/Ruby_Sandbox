@@ -372,7 +372,9 @@
 // bouncingBall(3.0, 1.0, 1.5)
 
 function printerError(s){
+  let reg = /[abcdefghijklm]/gi
 
+  console.log(`${s.replace(reg, '').length}/${s.length}`)
 }
 
 printerError("aaaxbbbbyyhwawiwjjjwwm")
