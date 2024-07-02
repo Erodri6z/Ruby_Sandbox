@@ -371,11 +371,11 @@
 // bouncingBall(30.0, 0.66, 1.5)
 // bouncingBall(3.0, 1.0, 1.5)
 
-function printerError(s){
-  let reg = /[abcdefghijklm]/gi
+// function printerError(s){
+//   let reg = /[abcdefghijklm]/gi
 
-  console.log(`${s.replace(reg, '').length}/${s.length}`)
-}
+//   console.log(`${s.replace(reg, '').length}/${s.length}`)
+// }
 
-printerError("aaaxbbbbyyhwawiwjjjwwm")
-printerError("aaabbbbhaijjjm")
+// printerError("aaaxbbbbyyhwawiwjjjwwm")
+// printerError("aaabbbbhaijjjm")
