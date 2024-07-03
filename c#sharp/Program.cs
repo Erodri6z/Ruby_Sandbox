@@ -3,13 +3,13 @@
 
 public class Program
 {
-  public static int PaperWork(int n, int m)
+  public static int Opposite(int n)
   {
-    return n < 0 || m < 0 ? 0 : n * m;
+
   }
   public static void Main()
     {
-      int result = PaperWork(5, 5);
+      int result = Opposite(5);
       Console.WriteLine(result);
     }
 }
