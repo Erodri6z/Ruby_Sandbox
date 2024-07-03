@@ -3,16 +3,12 @@
 
 public class Program
 {
-//   public static string PrinterError(string s)
-//   { 
-//     string pattern = "[^abcdefghijklm]";
-//     Regex reg = new Regex(pattern);
-//     int errorCount = reg.Matches(s).Count;
-//     return $"{errorCount}/{s.Length}";
-//   }
+  public static int PaperWork(int n, int m)
+  {
+  }
   public static void Main()
     {
-      // string result = PrinterError("aaabbbbhaijjjm");
+      int result = PaperWork(3, 2);
       Console.WriteLine(result);
     }
 }
