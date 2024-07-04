@@ -3,13 +3,18 @@
 
 public class Program
 {
-  public static int Opposite(int n)
+  public static int[] CountBy(int x, int n)
   {
-    return n * -1;
+    int[] z = new int[] {
+      
+    };
+    
+    
+    return z;
   }
   public static void Main()
     {
-      int result = Opposite(-5);
+      int[] result = CountBy(2,10);
       Console.WriteLine(result);
     }
 }
