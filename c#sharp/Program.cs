@@ -6,8 +6,10 @@ public class Program
 {
     public static int Past(int h, int m, int s)
     {
-
-      
+      int minutes = 60000;
+      int seconds = 1000;
+      int hours = 3600000;
+      return (h * hours) + (minutes * m) + (s * seconds);
     }
   public static void Main()
     {
