@@ -9,17 +9,17 @@ public class Program
     string firstChar = name.Substring(0, 1);
     if (firstChar.ToUpper() == "R")
     {
-      return "Plays Banjo";
+      return name + " plays Banjo";
     }
     else 
     {
-      return "Does not play banjo";
+      return name + " does not play banjo";
     }
 
   }
   public static void Main()
     {
-      string result = AreYouPlayingBanjo("bryan");
+      string result = AreYouPlayingBanjo("ryan");
       Console.WriteLine(result);
     }
 }
