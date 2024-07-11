@@ -4,9 +4,13 @@
 
 public class Program
 {
+  public static string AreYouPlayingBanjo(string name)
+  {
 
+  }
   public static void Main()
     {
-      Console.WriteLine(string.Join(", ", result));
+      string result = AreYouPlayingBanjo("Martin")
+      Console.WriteLine(result);
     }
 }
