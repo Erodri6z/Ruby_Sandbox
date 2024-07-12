@@ -6,15 +6,18 @@ public class Program
 {
   public static bool ValidatePin(string pin)
   {
-    int x = Convert.ToInt16(pin);
-    if (x.ToString().Count() == 4 || x.ToString().Count() == 6)
+    if (pin.Length == 4 || pin.Length == 6)
     {
+      foreach( char c in pin)
+      {
+        if (!char.IsDigit(c))
+        {
+          return false;
+        }
+      }
       return true;
     }
-    else
-    {
-      return false;
-    }
+    return true;
   }
   public static void Main()
     {
