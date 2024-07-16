@@ -7,28 +7,30 @@ public class Program
   public static char GetGrade(int s1, int s2, int s3)
   {
     int average = (s1 + s2 + s3)/ 3;
-
+    char grade = 'A';
 
     if (average >= 90) 
     {
-      return 'A';
+      grade = 'A';
     }
     else if (average >= 80)
     {
-      return 'B';
+      grade = 'B';
     }
     else if (average >= 70)
     {
-      return 'C';
+      grade = 'C';
     }
     else if (average >= 60)
     {
-      return 'D';
+      grade = 'D';
     } 
     else
     {
-      return 'F';
+      grade = 'F';
     }
+
+    return grade;
   }
   public static void Main()
     {
@@ -36,3 +38,4 @@ public class Program
       Console.WriteLine(result);
     }
 } 
+
