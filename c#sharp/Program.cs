@@ -4,24 +4,14 @@
 
 public class Program
 {
-  // public static bool ValidatePin(string pin)
-  // {
-  //   if (pin.Length == 4 || pin.Length == 6)
-  //   {
-  //     foreach( char c in pin)
-  //     {
-  //       if (!char.IsDigit(c))
-  //       {
-  //         return false;
-  //       }
-  //     }
-  //     return true;
-  //   }
-  //   return false;
-  // }
+  public static int DescendingOrder(int num)
+  {
+    // Bust a move right here
+    return 0;
+  }
   public static void Main()
     {
-    // bool result = ValidatePin("21234");
+    int result = DescendingOrder(21234);
       Console.WriteLine("result");
     }
 }
