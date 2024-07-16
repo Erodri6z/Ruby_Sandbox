@@ -6,12 +6,13 @@ public class Program
 {
   public static int DescendingOrder(int num)
   {
-    // Bust a move right here
-    return 0;
+    string numString = num.ToString();
+    string sorted = new string(numString.OrderByDescending(n => n).ToArray());
+    return int.Parse(sorted);
   }
   public static void Main()
     {
-    int result = DescendingOrder(21234);
-      Console.WriteLine("result");
+      int result = DescendingOrder(21234);
+      Console.WriteLine(result);
     }
-}
+} 
