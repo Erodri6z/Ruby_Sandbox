@@ -4,15 +4,14 @@
 
 public class Program
 {
-  public static int DescendingOrder(int num)
+  public static char GetGrade(int s1, int s2, int s3)
   {
-    string numString = num.ToString();
-    string sorted = new string(numString.OrderByDescending(n => n).ToArray());
-    return int.Parse(sorted);
+    //Your code goes here...
+    return 'F';
   }
   public static void Main()
     {
-      int result = DescendingOrder(21234);
+      char result = GetGrade(03, 90, 93);
       Console.WriteLine(result);
     }
 } 
