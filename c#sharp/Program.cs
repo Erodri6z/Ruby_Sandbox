@@ -5,21 +5,13 @@
 
 public class Program
 {
-  public static string GetMiddle(string s)
+  public static string EvenOrOdd(int number)
   {
-  //Code goes here!
-  int count = s.Count();
-  bool even = count % 2 == 0;
-  int middle = count / 2;
-  string centerChar = s.Substring(middle, 1 ); 
-  string middleTwo = middle > 0 ? s.Substring(middle - 1, 2) : s.Substring(0, 1);
-
-  return even? middleTwo : centerChar;
 
   }
   public static void Main()
     {
-      string result = GetMiddle("Manmma");
+      string result = EvenOrOdd(12);
       Console.WriteLine(result);
     }
 } 
