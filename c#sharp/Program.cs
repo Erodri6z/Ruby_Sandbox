@@ -12,7 +12,7 @@ public class Program
   bool even = count % 2 == 0;
   int middle = count / 2;
   string centerChar = s.Substring(middle, 1 ); 
-  string middleTwo = s.Substring(middle - 1, 2);
+  string middleTwo = middle > 0 ? s.Substring(middle - 1, 2) : s.Substring(0, 1);
 
   return even? middleTwo : centerChar;
 
