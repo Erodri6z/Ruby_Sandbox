@@ -7,11 +7,11 @@ public class Program
 {
   public static string EvenOrOdd(int number)
   {
-
+    return number % 2 == 0 ? "Even" : "Odd";
   }
   public static void Main()
     {
-      string result = EvenOrOdd(12);
+      string result = EvenOrOdd(13);
       Console.WriteLine(result);
     }
 } 
