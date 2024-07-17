@@ -1,4 +1,5 @@
-﻿using System;
+﻿// using System;
+// using System.Numerics;
 // using System.Collections.Generic;
 // using System.Text.RegularExpressions;
 
@@ -7,12 +8,13 @@ public class Program
   public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
   {
     //Insert brain here
-    return false;
+    int avgClassPoint = ClassPoints.Sum() + YourPoints / ClassPoints.Length;
+    return avgClassPoint < YourPoints;
     
   }
   public static void Main()
     {
-      bool result = BetterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75);
+      bool result = BetterThanAverage([100, 90], 75);
       Console.WriteLine(result);
     }
 } 
