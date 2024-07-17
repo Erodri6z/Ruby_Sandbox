@@ -5,9 +5,14 @@
 
 public class Program
 {
+    public static int CountSheeps(bool[] sheeps)
+  {
+    
+    
+  }
   public static void Main()
     {
-      string result = "results";
+      int result = CountSheeps(true, false, true);
       Console.WriteLine(result);
     }
 } 
