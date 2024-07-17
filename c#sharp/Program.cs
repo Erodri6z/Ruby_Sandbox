@@ -5,16 +5,14 @@
 
 public class Program
 {
-  // public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
-  // {
-  //   //Insert brain here
-  //   int avgClassPoint = ClassPoints.Sum() + YourPoints / ClassPoints.Length;
-  //   return avgClassPoint < YourPoints;
-    
-  // }
+  public static string GetMiddle(string s)
+  {
+  //Code goes here!
+  
+  }
   public static void Main()
     {
-      bool result = true;
+      string result = GetMiddle("Man");
       Console.WriteLine(result);
     }
 } 
