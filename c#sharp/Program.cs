@@ -5,14 +5,13 @@
 
 public class Program
 {
-  public static int CountSheeps(bool[] sheeps)
-    {
-      bool[] present = Array.FindAll(sheeps, c => c == true);
-      return present.Count();
-    }
+  public static bool CheckForFactor(int num, int factor)
+  {
+    // code here
+  }
   public static void Main()
     {
-      int result = CountSheeps([true, false, true]);
+      bool result = CheckForFactor(10, 2);
       Console.WriteLine(result);
     }
 } 
