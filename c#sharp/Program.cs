@@ -5,14 +5,13 @@
 
 public class Program
 {
-  public static bool CheckForFactor(int num, int factor)
+  public static int NbYear(int p0, double percent, int aug, int p) 
   {
-    // code here
-    return num % factor == 0;
+    // your code
   }
   public static void Main()
     {
-      bool result = CheckForFactor(10, 2);
+      int result = NbYear((1500000, 0.25, 1000, 2000000));
       Console.WriteLine(result);
     }
 } 
