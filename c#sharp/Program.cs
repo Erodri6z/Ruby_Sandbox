@@ -8,7 +8,7 @@ public class Program
   public static bool CheckForFactor(int num, int factor)
   {
     // code here
-    return factor % num == 0;
+    return num % factor == 0;
   }
   public static void Main()
     {
