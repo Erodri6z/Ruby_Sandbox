@@ -5,19 +5,17 @@
 
 public class Program
 {
-	public static string Longest(string s1, string s2) 
+  public int Min(int[] list)
   {
-    // your code
-    string combined = s1 + s2;
-
-    string result = String.Concat(combined.Distinct().OrderBy(c => c));
-
-    return result;
   }
-
+  
+  public int Max(int[] list)
+  {
+  }
   public static void Main()
     {
-      string result = Longest("aretheyhere", "yestheyarehere");
-      Console.WriteLine(result);
+      int max = Max(42, 54, 65, 87, 0);
+      int min = Min(42, 54, 65, 87, 0);
+      Console.WriteLine("Min = " + min + " and Max = " + max);
     }
 } 
