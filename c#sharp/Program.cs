@@ -1,21 +1,18 @@
-﻿// using System;
-// using System.Numerics;
+﻿using System;
+// using System.Linq;
 // using System.Collections.Generic;
 // using System.Text.RegularExpressions;
 
 public class Program
 {
-  public int Min(int[] list)
+  public static List<string> Number(List<string> lines) 
   {
-  }
-  
-  public int Max(int[] list)
-  {
+      //your code goes here
+      return lines;
   }
   public static void Main()
     {
-      int max = Max(42, 54, 65, 87, 0);
-      int min = Min(42, 54, 65, 87, 0);
-      Console.WriteLine("Min = " + min + " and Max = " + max);
+    List<string> results = Number(["A", "B", "C"]);
+      Console.WriteLine(results);
     }
 } 
