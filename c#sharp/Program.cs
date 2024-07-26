@@ -6,21 +6,13 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
-  public static List<string> Number(List<string> lines) 
+  public static string MakeUpperCase(string str)
   {
-    List<string> result = new List<string>();
-
-    for (int i = 0; i < lines.Count; i++)
-    {
-      result.Add($"{i + 1}: {lines[i]}");
-    }
-
-
-    return result;
+    return "str to upperCase";
   }
   public static void Main()
     {
-      List<string> results = Number(["A", "B", "C"]);
-      Console.WriteLine(results[1]);
+      string result = MakeUpperCase("aaaaaaa");
+      Console.WriteLine(result);
     }
 } 
