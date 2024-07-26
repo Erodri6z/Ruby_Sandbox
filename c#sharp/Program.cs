@@ -8,7 +8,7 @@ public class Program
 {
   public static string MakeUpperCase(string str)
   {
-    return "str to upperCase";
+    return str.ToUpper();
   }
   public static void Main()
     {
