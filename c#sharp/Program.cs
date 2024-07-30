@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 // using System.Collections.Generic;
 // using System.Runtime.InteropServices;
@@ -8,7 +9,10 @@ public class Program
 {
   public static string Rgb(int r, int g, int b) 
   {
-    return "null";
+    string red = r.ToString("X2");
+    string green = g.ToString("X2");
+    string blue = b.ToString("X2");
+    return "#" + red + green + blue;
   }
   public static void Main()
     {
