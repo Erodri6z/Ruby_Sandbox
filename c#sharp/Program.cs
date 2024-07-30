@@ -6,30 +6,13 @@ using System.Linq;
 
 public class Program
 {
-    public static string ExpandedForm(long num) 
-    {
-      int[] digits = num.ToString().Select(o => Convert.ToInt32(o) - 48).ToArray();
-      string result = "";
-
-      for (int i = 0; i < digits.Length; i++)
-      {
-        if (digits[i] != 0)
-        {
-          result += $" + {digits[i]}{new String('0', digits.Length - i - 1)}";
-        }
-      }
-
-      if (result.StartsWith(" + "))
-      {
-        result = result.Substring(3);
-      }
-
-      return result;
-
-    }
+  public static string Rgb(int r, int g, int b) 
+  {
+    return "null";
+  }
   public static void Main()
     {
-      string result = ExpandedForm(20303040);
+      string result = Rgb(225, 165, 0);
       Console.WriteLine(result);
     }
 } 
