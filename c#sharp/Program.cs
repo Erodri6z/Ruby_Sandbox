@@ -7,32 +7,13 @@ using System.Linq;
 
 public class Program
 {
-  public static string Rgb(int r, int g, int b) 
+  public static int[] TwoSum(int[] nums, int target)
   {
-    static string ConvertToHex( int x )
-    {
-      if ( x < 0 )
-      {
-        return "00";
-      }
-      else if ( x > 255 )
-      {
-        return "FF";
-      }
-      else
-      {
-        return x.ToString("X2");
-      }
-    }
-    string red = ConvertToHex(r);
-    string green = ConvertToHex(g);
-    string blue = ConvertToHex(b);
-
-    return "#" + red + green + blue;  
+    return nums;
   }
   public static void Main()
     {
-      string result = Rgb(255, 255, 300);
+      int[] result = TwoSum([1,2,3], 4);
       Console.WriteLine(result);
     }
 } 
