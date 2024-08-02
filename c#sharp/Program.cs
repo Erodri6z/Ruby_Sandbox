@@ -9,7 +9,14 @@ public class Program
 {
   public static string CountSheep(int n)
   {
-    throw new NotImplementedException();
+    string result = "";
+
+    for (int i = 1; i < n; i++) 
+    {
+      result += $"{i} sheep...";
+    }
+
+    return result;
   }
   public static void Main()
     {
