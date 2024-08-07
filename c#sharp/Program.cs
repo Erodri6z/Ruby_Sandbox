@@ -10,6 +10,11 @@ public class Program
 {
   public static string Maskify(string cc)
   {
+    if (cc.Length < 4)
+    {
+      return cc;
+    }    
+    
     return $"{new String('#', cc.Length - 4)}{cc.Substring(cc.Length - 4)}";
   }
   public static void Main()
