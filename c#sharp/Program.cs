@@ -10,8 +10,10 @@ public class Program
 {
   public static string Maskify(string cc)
   {
-    
+    string lastFour = cc.Substring(cc.Length - 4);
+    string masked = new string('*', cc.Length - 4);
 
+    return masked + lastFour;
   }
   public static void Main()
     {
