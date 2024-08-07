@@ -1,5 +1,6 @@
 ﻿// using System;
 using System.Collections.ObjectModel;
+using System.Numerics;
 // using System.Linq;
 // using System.Collections.Generic;
 // using System.Runtime.InteropServices;
@@ -7,20 +8,14 @@ using System.Collections.ObjectModel;
 
 public class Program
 {
-  public static string CountSheep(int n)
+  public static string Maskify(string cc)
   {
-    string result = "";
+    
 
-    for (int i = 1; i < n; i++) 
-    {
-      result += $"{i} sheep...";
-    }
-
-    return result;
   }
   public static void Main()
     {
-      string result = CountSheep(3);
+      string result = Maskify("321210934237192");
       Console.WriteLine(result);
     }
 } 
