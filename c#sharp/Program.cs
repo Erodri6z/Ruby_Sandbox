@@ -13,20 +13,10 @@ public class Program
   public static string CreatePhoneNumber(int[] numbers)
   {
     string number = string.Join("", numbers);
-    int startIndex = 0;
-    int length = 10;
-
-    if (startIndex >= 0 && startIndex < number.Length && length >= 0 && startIndex + length <= number.Length)
+    if (numbers.Length >= 10)
     {
-      if (number.Length >= 10)
-      {
-        string v = $"({number.Substring(0, 3)}) {number.Substring(3,3)} - {number.Substring(6, 4)}";
-        return v;
-      }
-      else
-      {
-        return "error";
-      }
+      string v = $"({number.Substring(0, 3)}) {number.Substring(3, 3)}-{number.Substring(6, 4)}";
+      return v;
     }
     else
     {
