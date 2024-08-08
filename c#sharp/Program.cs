@@ -8,18 +8,13 @@ using System.Numerics;
 
 public class Program
 {
-  public static string Maskify(string cc)
+  public static string CreatePhoneNumber(int[] numbers)
   {
-    if (cc.Length < 4)
-    {
-      return cc;
-    }    
     
-    return $"{new String('#', cc.Length - 4)}{cc.Substring(cc.Length - 4)}";
   }
   public static void Main()
     {
-      string result = Maskify("321210934237192");
+      string result = CreatePhoneNumber("3126547890");
       Console.WriteLine(result);
     }
 } 
