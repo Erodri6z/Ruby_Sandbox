@@ -10,10 +10,14 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
+    public static bool IsSquare(int n)
+  {
+    //Your code goes here!
+  }
 
   public static void Main()
     {
-      // string result = CreatePhoneNumber(new int[] {3, 1, 2, 6, 5, 4, 7, 8, 9, 0});
+      bool result = IsSquare(10);
       Console.WriteLine(result);
     }
 } 
