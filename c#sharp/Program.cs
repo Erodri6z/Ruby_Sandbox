@@ -12,7 +12,7 @@ public class Program
 {
   public static bool IsSquare(int n)
   {
-    double x = Convert.ToInt32(Math.Sqrt(n));
+    double x = (int)Math.Round(Math.Sqrt(n));
     return n >= 0 ? (x * x == n) : false; 
   }
 
