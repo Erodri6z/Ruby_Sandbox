@@ -10,14 +10,19 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
-    public static bool IsSquare(int n)
+  public static bool IsSquare(int n)
   {
-    //Your code goes here!
+    if (n >= 0)
+    {
+      double x = Math.Sqrt(n);
+      return (x * x == n);
+    }
+    return false;
   }
 
   public static void Main()
     {
-      bool result = IsSquare(10);
+      bool result = IsSquare(25);
       Console.WriteLine(result);
     }
 } 
