@@ -12,17 +12,13 @@ public class Program
 {
   public static bool IsSquare(int n)
   {
-    if (n >= 0)
-    {
-      double x = Math.Sqrt(n);
-      return (x * x == n);
-    }
-    return false;
+    double x = Convert.ToInt32(Math.Sqrt(n));
+    return n >= 0 ? (x * x == n) : false; 
   }
 
   public static void Main()
     {
-      bool result = IsSquare(25);
+      bool result = IsSquare(459182);
       Console.WriteLine(result);
     }
 } 
