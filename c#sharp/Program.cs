@@ -10,15 +10,14 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
-  public static bool IsSquare(int n)
+  public static int Solution(int value)
   {
-    double x = (int)Math.Round(Math.Sqrt(n));
-    return n >= 0 ? (x * x == n) : false; 
+    return 0;
   }
 
   public static void Main()
     {
-      bool result = IsSquare(459182);
+      int result = Solution(10);
       Console.WriteLine(result);
     }
 } 
