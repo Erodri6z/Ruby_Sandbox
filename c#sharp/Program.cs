@@ -15,10 +15,9 @@ public class Program
     string alpha = "abcdefghijklmnopqrstuvwxyz";
     bool isUpperCase = char.IsUpper(array[0]);
     alpha = isUpperCase ? alpha.ToUpper() : alpha;
-
+    
     int start = alpha.IndexOf(array[0]);
 
-    // Console.WriteLine(start);
     for (int i = start; i < alpha.Length; i++) 
     {
       if (!array.Contains(alpha[i]))
