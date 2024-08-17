@@ -10,23 +10,13 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
-  public static int Solution(int value)
+  public static char FindMissingLetter(char[] array)
   {
-    List<int> multiples = new List<int>();
-    for (int i = 0; i < value; i++)
-    {
-      if (i % 3 == 0 || i % 5 == 0)
-      {
-        multiples.Add(i);
-      }
-    }
-    // multiples.ForEach(i => Console.WriteLine("{0}\t", i));
-    return multiples.Sum();
+    return ' ';
   }
-
   public static void Main()
     {
-      int result = Solution(200);
+      char result = FindMissingLetter(['a','c']);
       Console.WriteLine(result);
     }
 } 
