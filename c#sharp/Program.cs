@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 // using System.Linq;
 // using System.Collections.Generic;
 // using System.Runtime.InteropServices;
@@ -12,7 +14,17 @@ public class Program
 {
     public static long PowerSumDigTerm(int n) 
     {
-        // your code
+      int count = 0;
+      var digits = n.ToString().Select(x => int.Parse(x.ToString()));
+      foreach (int i in digits)
+      {
+        count += i;
+      }
+      int length = n.ToString().Length;
+
+      long result = (long)Math.Pow(count, length);
+      
+      return result;
     }
   public static void Main()
     {
