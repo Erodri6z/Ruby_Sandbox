@@ -10,26 +10,13 @@ using System.Runtime.InteropServices;
 
 public class Program
 {
-  public static char FindMissingLetter(char[] array)
-  {
-    string alpha = "abcdefghijklmnopqrstuvwxyz";
-    bool isUpperCase = char.IsUpper(array[0]);
-    alpha = isUpperCase ? alpha.ToUpper() : alpha;
-    
-    int start = alpha.IndexOf(array[0]);
-
-    for (int i = start; i < alpha.Length; i++) 
+    public static long PowerSumDigTerm(int n) 
     {
-      if (!array.Contains(alpha[i]))
-      {
-        return alpha[i];
-      }
+        // your code
     }
-    return ' ';
-  }
   public static void Main()
     {
-      char result = FindMissingLetter(['B','C','E']);
+      long result = PowerSumDigTerm(81);
       Console.WriteLine(result);
     }
 } 
