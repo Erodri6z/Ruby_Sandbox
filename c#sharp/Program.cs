@@ -12,23 +12,14 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Program
 {
-    public static long PowerSumDigTerm(int n) 
+    public static int ConsecutiveSum(BigInteger[] arr)
     {
-      int count = 0;
-      var digits = n.ToString().Select(x => int.Parse(x.ToString()));
-      foreach (int i in digits)
-      {
-        count += i;
-      }
-      int length = n.ToString().Length;
-
-      long result = (long)Math.Pow(count, length);
-      
-      return result;
+      return 0;
     }
+
   public static void Main()
     {
-      long result = PowerSumDigTerm(81);
+      int result = ConsecutiveSum([3, 1, 100, 120, 101, 99, 2]);
       Console.WriteLine(result);
     }
 } 
