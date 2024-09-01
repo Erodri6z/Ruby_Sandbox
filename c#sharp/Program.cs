@@ -15,24 +15,34 @@ public class Program
 {
     public static int ConsecutiveSum(BigInteger[] arr)
     {
-      int[] arrWithoutDuplicates = arr.Where(x => x <= int.MaxValue && x >= int.MinValue).Select(x => (int)x).Distinct().OrderBy(x => x).ToArray();
+      return ConsecutiveSumM(new BigInteger[][] { arr });
+    }
+    public static int ConsecutiveSumM(BigInteger[][] arr)
+    {
+      List<BigInteger> flat = new List<BigInteger>();
+      foreach (var item in arr)
+      {
+        flat.AddRange(item);
+      }
+
+      BigInteger[] flattened = flat.ToArray();
+
+      int[] arrWithoutDuplicates = flattened.Where(x => x <= int.MaxValue && x >= int.MinValue).Select(x => (int)x).Distinct().OrderBy(x => x).ToArray();
       List<int> conNumbers = new List<int>();
 
-      for (int i = 0; i < arrWithoutDuplicates.Length - 1; i++)
-      {
-        if (arrWithoutDuplicates[i] + 1 == arrWithoutDuplicates[i + 1] || arrWithoutDuplicates[i] - 1 == arrWithoutDuplicates[i - 1])
+      for (int i = 0; i < arrWithoutDuplicates.Length; i++)
         {
-          // Console.WriteLine(arrWithoutDuplicates[i]);
-          conNumbers.Add(arrWithoutDuplicates[i]);
-          if (i == arrWithoutDuplicates.Length - 2) 
-          {
-            // Console.WriteLine(arrWithoutDuplicates[i]);
-            conNumbers.Add(arrWithoutDuplicates[i + 1]);
-          }
+        if ((i > 0 && arrWithoutDuplicates[i] - 1 == arrWithoutDuplicates[i - 1])
+        || 
+        (i < arrWithoutDuplicates.Length - 1 && arrWithoutDuplicates[i] + 1 == arrWithoutDuplicates[i + 1])
+        ||
+        (i == arrWithoutDuplicates.Length - 1 && conNumbers.Count > 0 && arrWithoutDuplicates[i] - 1 == arrWithoutDuplicates[i - 1]))
+        {
+            conNumbers.Add(arrWithoutDuplicates[i]);
         }
       }
 
-      int sum = conNumbers.Sum();
+      int sum = conNumbers.Distinct().Sum();
       foreach(int i in conNumbers)
       {
         Console.WriteLine(i);
@@ -59,7 +69,7 @@ public class Program
 
   public static void Main()
     {
-      int result = ConsecutiveSum([ 1, 2, 5, 6, 10, 11, 12 ]);
+      int result = ConsecutiveSum(new BigInteger[] {BigInteger.Parse("99999999999999999999999999999999999999999999999999"),BigInteger.Parse("100000000000000000000000000000000000000000000000000"), BigInteger.Parse("100000000000000000000000000000000000000000000000001")});
       Console.WriteLine(result);
     }
 } 
