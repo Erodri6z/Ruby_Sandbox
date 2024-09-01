@@ -20,14 +20,24 @@ public class Program
 
       for (int i = 0; i < arrWithoutDuplicates.Length - 1; i++)
       {
-        if (arrWithoutDuplicates[i] + 1 == arrWithoutDuplicates[i + 1] || arrWithoutDuplicates[i] - 1 == arrWithoutDuplicates[i - 1] )
+        if (arrWithoutDuplicates[i] + 1 == arrWithoutDuplicates[i + 1] || arrWithoutDuplicates[i] - 1 == arrWithoutDuplicates[i - 1])
         {
+          // Console.WriteLine(arrWithoutDuplicates[i]);
           conNumbers.Add(arrWithoutDuplicates[i]);
+          if (i == arrWithoutDuplicates.Length - 2) 
+          {
+            // Console.WriteLine(arrWithoutDuplicates[i]);
+            conNumbers.Add(arrWithoutDuplicates[i + 1]);
+          }
         }
       }
 
-      int sum = conNumbers.Sum(x => x);
-      int result = sum.ToString().Select(b => int.Parse(b.ToString())).ToArray().Sum();
+      int sum = conNumbers.Sum();
+      foreach(int i in conNumbers)
+      {
+        Console.WriteLine(i);
+      }
+      int result = sum.ToString().Select(b => int.Parse(b.ToString())).Sum();
       return result;
       // for (int i = 0; i < arrWithoutDuplicates.Length; i++)
       // {
@@ -49,7 +59,7 @@ public class Program
 
   public static void Main()
     {
-      int result = ConsecutiveSum([3, 1, 100, 120, 101, 99, 2]);
+      int result = ConsecutiveSum([ 1, 2, 5, 6, 10, 11, 12 ]);
       Console.WriteLine(result);
     }
 } 
