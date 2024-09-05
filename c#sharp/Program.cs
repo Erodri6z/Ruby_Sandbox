@@ -15,7 +15,7 @@ public class Program
 {
   public static bool IsDivisible(int n, int x, int y) 
   {
-		// your code
+		return n / x == y ;
 	}
 
 
