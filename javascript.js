@@ -379,3 +379,11 @@
 
 // printerError("aaaxbbbbyyhwawiwjjjwwm")
 // printerError("aaabbbbhaijjjm")
+
+
+function wave(str) {
+  //code here
+}
+
+wave("gap")
+wave("sleep and weep")
