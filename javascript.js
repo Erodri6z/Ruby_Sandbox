@@ -402,10 +402,14 @@ function toCamelCase(str) {
   let arr = str.split(/-|_| /)
   let resultArr = []
   for (let i = 0; i < arr.length; i++) {
-    resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() ))
+    if (i !== 0) {
+      resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() ))
+    } else (
+      resultArr.push(arr[i])
+    )
   }
 
-  let result = resultArr.join("").replace(resultArr[0][0], resultArr[0][0].toLowerCase())
+  let result = resultArr.join("")
   console.log(arr)
   console.log(result)
 
@@ -414,4 +418,4 @@ function toCamelCase(str) {
 
 toCamelCase("among_us")
 toCamelCase("java-script")
-toCamelCase("my first game")
+toCamelCase("My first game")
