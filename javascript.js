@@ -381,19 +381,28 @@
 // printerError("aaabbbbhaijjjm")
 
 
-function wave(str) {
-  let result = []
+// function wave(str) {
+//   let result = []
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === " ") {
-      continue
-    }
-    let wave = str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1)
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === " ") {
+//       continue
+//     }
+//     let wave = str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1)
 
-    result.push(wave)
-  }
-  console.log(result)
+//     result.push(wave)
+//   }
+//   console.log(result)
+// }
+
+// wave("gap")
+// wave("sleep and weep")
+
+function toCamelCase(str) {
+
+
 }
 
-wave("gap")
-wave("sleep and weep")
+
+toCamelCase("among_us")
+toCamelCase("java-script")
