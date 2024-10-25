@@ -398,20 +398,26 @@
 // wave("gap")
 // wave("sleep and weep")
 
-function toCamelCase(str) {
-  let arr = str.split(/-|_| /)
-  let resultArr = []
-  for (let i = 0; i < arr.length; i++) {
-    i !== 0 ? resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() )) : resultArr.push(arr[i])
-  }
+// function toCamelCase(str) {
+//   let arr = str.split(/-|_| /)
+//   let resultArr = []
+//   for (let i = 0; i < arr.length; i++) {
+//     i !== 0 ? resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() )) : resultArr.push(arr[i])
+//   }
 
-  let result = resultArr.join("")
-  console.log(arr)
-  console.log(result)
+//   let result = resultArr.join("")
+//   console.log(arr)
+//   console.log(result)
 
+// }
+
+
+// toCamelCase("among_us")
+// toCamelCase("java-script")
+// toCamelCase("My first game")
+
+function humanReadable(seconds) {
+  return ''
 }
 
-
-toCamelCase("among_us")
-toCamelCase("java-script")
-toCamelCase("My first game")
+humanReadable(86400)
