@@ -416,23 +416,31 @@
 // toCamelCase("java-script")
 // toCamelCase("My first game")
 
-function humanReadable(seconds) {
-  let hh = (Math.floor(seconds / 3600)).toString()
-  let mm = (Math.floor((seconds % 3600) / 60)).toString()
-  let ss = (seconds % 60).toString()
+// function humanReadable(seconds) {
+//   let hh = (Math.floor(seconds / 3600)).toString()
+//   let mm = (Math.floor((seconds % 3600) / 60)).toString()
+//   let ss = (seconds % 60).toString()
 
-  if (mm.length === 1) {
-    mm = "0" + mm
-  }
-  if (hh.length === 1) {
-    hh = "0" + hh
-  }
-  if (ss.length === 1) {
-    ss = "0" + ss
-  }
+//   if (mm.length === 1) {
+//     mm = "0" + mm
+//   }
+//   if (hh.length === 1) {
+//     hh = "0" + hh
+//   }
+//   if (ss.length === 1) {
+//     ss = "0" + ss
+//   }
 
-  console.log(`${hh}:${mm}:${ss}`)
+//   console.log(`${hh}:${mm}:${ss}`)
 
+// }
+
+// humanReadable(86400)
+
+function findOutlier(int) {
+  //your code here
 }
 
-humanReadable(86400)
+findOutlier([2,3,4,6,8])
+
+findOutlier([1,3,5,6,7])
