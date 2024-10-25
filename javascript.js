@@ -417,11 +417,21 @@
 // toCamelCase("My first game")
 
 function humanReadable(seconds) {
-  let hh = Math.floor(seconds / 3600)
-  let mm = Math.floor((seconds % 3600) / 60)
-  let ss = seconds % 60
+  let hh = (Math.floor(seconds / 3600)).toString()
+  let mm = (Math.floor((seconds % 3600) / 60)).toString()
+  let ss = (seconds % 60).toString()
 
-  console.log(hh, mm, ss)
+  if (mm.length === 1) {
+    mm = "0" + mm
+  }
+  if (hh.length === 1) {
+    hh = "0" + hh
+  }
+  if (ss.length === 1) {
+    ss = "0" + ss
+  }
+
+  console.log(`${hh}:${mm}:${ss}`)
 
 }
 
