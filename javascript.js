@@ -417,7 +417,12 @@
 // toCamelCase("My first game")
 
 function humanReadable(seconds) {
-  return ''
+  let hh = Math.floor(seconds / 3600)
+  let mm = Math.floor((seconds % 3600) / 60)
+  let ss = seconds % 60
+
+  console.log(hh, mm, ss)
+
 }
 
 humanReadable(86400)
