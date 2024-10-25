@@ -382,7 +382,24 @@
 
 
 function wave(str) {
-  //code here
+  const strArr = str.split("")
+  let result = []
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      continue
+    }
+    let wave = str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1)
+
+    result.push(wave)
+  }
+  // strArr.forEach(char => {
+  //   if (char !== " "){
+  //     result.push(str.replace(char, char.toUpperCase).toString())
+  //   } 
+  // });
+
+  console.log(result)
 }
 
 wave("gap")
