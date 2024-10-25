@@ -402,11 +402,7 @@ function toCamelCase(str) {
   let arr = str.split(/-|_| /)
   let resultArr = []
   for (let i = 0; i < arr.length; i++) {
-    if (i !== 0) {
-      resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() ))
-    } else (
-      resultArr.push(arr[i])
-    )
+    i !== 0 ? resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() )) : resultArr.push(arr[i])
   }
 
   let result = resultArr.join("")
