@@ -382,7 +382,6 @@
 
 
 function wave(str) {
-  const strArr = str.split("")
   let result = []
 
   for (let i = 0; i < str.length; i++) {
@@ -393,12 +392,6 @@ function wave(str) {
 
     result.push(wave)
   }
-  // strArr.forEach(char => {
-  //   if (char !== " "){
-  //     result.push(str.replace(char, char.toUpperCase).toString())
-  //   } 
-  // });
-
   console.log(result)
 }
 
