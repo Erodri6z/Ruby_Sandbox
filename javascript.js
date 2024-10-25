@@ -399,10 +399,19 @@
 // wave("sleep and weep")
 
 function toCamelCase(str) {
+  let arr = str.split(/-|_| /)
+  let resultArr = []
+  for (let i = 0; i < arr.length; i++) {
+    resultArr.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase() ))
+  }
 
+  let result = resultArr.join("").replace(resultArr[0][0], resultArr[0][0].toLowerCase())
+  console.log(arr)
+  console.log(result)
 
 }
 
 
 toCamelCase("among_us")
 toCamelCase("java-script")
+toCamelCase("my first game")
