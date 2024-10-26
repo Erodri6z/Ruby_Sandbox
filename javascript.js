@@ -442,11 +442,12 @@ const { forEachChild } = require("typescript")
 function findOutlier(int) {
   let arr = []
   int.forEach(n => {
-    arr.push(n % 2)
+    arr.push(Math.abs(n) % 2)
   })
   let sum = arr.reduce((a, b) => a + b)
+  console.log(int, arr)
   
-  if (sum === 1) {
+  if (sum === 1 ) {
     let position = arr.findIndex((e) => e === 1)
     console.log(int[position])
   } else {
@@ -458,3 +459,5 @@ function findOutlier(int) {
 findOutlier([2,3,4,6,8])
 
 findOutlier([1,3,5,6,7])
+
+findOutlier([24409982,64201512,-76964836,-135519610,164947204,-37811392,-121086372,-114137250,72089848,-189837332,-30369866,105908570,90393978,103132998,168983728,24887162,-196396334,-5385068,-170722608,-50023452,-119810224,-19345039,-148689014,-54511450,65485564,29053754,66415766,-443778,62056754])
