@@ -5,6 +5,8 @@
 //   return array
 // }
 
+const { forEachChild } = require("typescript")
+
 // console.log(moveZeros([1,2,0,1,0,1,0,3,0,1]))
 
 // complete the function
@@ -438,7 +440,19 @@
 // humanReadable(86400)
 
 function findOutlier(int) {
-  //your code here
+  let arr = []
+  int.forEach(n => {
+    arr.push(n % 2)
+  })
+  let sum = arr.reduce((a, b) => a + b)
+  
+  if (sum === 1) {
+    let position = arr.findIndex((e) => e === 1)
+    console.log(int[position])
+  } else {
+    let position = arr.findIndex((e) => e === 0)
+    console.log(int[position])
+  }
 }
 
 findOutlier([2,3,4,6,8])
