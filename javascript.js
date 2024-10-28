@@ -464,7 +464,18 @@ const { forEachChild } = require("typescript")
 
 
 function isPrime(num) {
+  if (num <= 1) {
+    console.log(false)
+  }
 
+  for (let i = 0; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      console.log(false)
+      break
+    }
+  }
+  console.log(true)
+  return 
 }
 
 
