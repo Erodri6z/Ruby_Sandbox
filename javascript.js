@@ -467,9 +467,14 @@ function isPrime(num) {
   if (num <= 1) {
     console.log(false)
   }
-
-  for (let i = 0; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
+  if (num <= 3) {
+    console.log(false)
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    console.log(false)
+  }
+  for (let i = 5; i <= num; i+= 6) {
+    if (num % i === 0 || num % (i + 2) === 0 ) {
       console.log(false)
       break
     }
