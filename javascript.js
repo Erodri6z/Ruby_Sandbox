@@ -486,3 +486,11 @@ const { forEachChild } = require("typescript")
 
 // isPrime(2)
 // isPrime(75)
+
+
+function narcissistic(value) {
+  // code must return true or false
+}
+
+narcissistic(153)
+narcissistic(1652)
