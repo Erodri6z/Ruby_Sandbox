@@ -498,7 +498,7 @@ function narcissistic(value) {
     count = count + int
   }
   // console.log(numArr.length)
-  console.log(count)
+  console.log(count === value)
 }
 
 narcissistic(153)
