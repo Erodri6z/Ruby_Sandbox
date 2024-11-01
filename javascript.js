@@ -515,7 +515,7 @@ function spinWords(str) {
       sArr[i] = reversed 
     }
   }
-  console.log(sArr)
+  console.log(sArr.join(" "))
 }
 
 spinWords("Hey fellow warriors")
