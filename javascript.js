@@ -488,18 +488,26 @@ const { forEachChild } = require("typescript")
 // isPrime(75)
 
 
-function narcissistic(value) {
-  // code must return true or false
-  let numArr = value.toString().split("")
-  let count = 0
-  for (let i = 0; i < numArr.length; i++) {
-    let int = parseInt(numArr[i]) ** numArr.length
-    // console.log(int)
-    count = count + int
-  }
-  // console.log(numArr.length)
-  console.log(count === value)
+// function narcissistic(value) {
+//   // code must return true or false
+//   let numArr = value.toString().split("")
+//   let count = 0
+//   for (let i = 0; i < numArr.length; i++) {
+//     let int = parseInt(numArr[i]) ** numArr.length
+//     // console.log(int)
+//     count = count + int
+//   }
+//   // console.log(numArr.length)
+//   console.log(count === value)
+// }
+
+// narcissistic(153)
+// narcissistic(1652)
+
+
+function spinWords(str) {
+  //code here 
+
 }
 
-narcissistic(153)
-narcissistic(1652)
+spinWords("Hey fellow warriors")
