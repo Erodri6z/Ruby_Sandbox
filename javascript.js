@@ -5,7 +5,7 @@
 //   return array
 // }
 
-const { forEachChild } = require("typescript")
+// const { forEachChild } = require("typescript")
 
 // console.log(moveZeros([1,2,0,1,0,1,0,3,0,1]))
 
@@ -521,3 +521,11 @@ const { forEachChild } = require("typescript")
 // spinWords("Hey fellow warriors")
 
 
+function divisors(ints) {
+
+
+}
+
+divisors(12)
+divisors(24)
+divisors(13)
