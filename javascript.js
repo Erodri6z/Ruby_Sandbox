@@ -505,17 +505,19 @@ const { forEachChild } = require("typescript")
 // narcissistic(1652)
 
 
-function spinWords(str) {
-  //code here 
-  let sArr = str.split(' ')
+// function spinWords(str) {
+//   //code here 
+//   let sArr = str.split(' ')
 
-  for (let i = 0; i < sArr.length; i++){
-    if (sArr[i].split('').length >= 5){
-      let reversed = sArr[i].split("").reverse().join("")
-      sArr[i] = reversed 
-    }
-  }
-  console.log(sArr.join(" "))
-}
+//   for (let i = 0; i < sArr.length; i++){
+//     if (sArr[i].split('').length >= 5){
+//       let reversed = sArr[i].split("").reverse().join("")
+//       sArr[i] = reversed 
+//     }
+//   }
+//   console.log(sArr.join(" "))
+// }
 
-spinWords("Hey fellow warriors")
+// spinWords("Hey fellow warriors")
+
+
