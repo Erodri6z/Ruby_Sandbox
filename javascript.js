@@ -507,7 +507,15 @@ const { forEachChild } = require("typescript")
 
 function spinWords(str) {
   //code here 
+  let sArr = str.split(' ')
 
+  for (let i = 0; i < sArr.length; i++){
+    if (sArr[i].split('').length >= 5){
+      let reversed = sArr[i].split("").reverse().join("")
+      sArr[i] = reversed 
+    }
+  }
+  console.log(sArr)
 }
 
 spinWords("Hey fellow warriors")
