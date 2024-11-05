@@ -536,3 +536,12 @@
 // divisors(12)
 // divisors(25)
 // divisors(13)
+
+
+function deleteNth( arr, n) {
+  //
+}
+
+deleteNth([20,37,20,21], 1)
+deleteNth([1,1,3,3,7,2,2,2,2], 3)
+deleteNth([12,39,19,39,39,19,12], 1)
