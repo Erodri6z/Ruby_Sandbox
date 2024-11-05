@@ -521,18 +521,18 @@
 // spinWords("Hey fellow warriors")
 
 
-function divisors(int) {
-  let i = 0
-  let result = []
-  while (i !== int) {
-    if (int % i === 0 && i !== int && i !== 1) {
-      result.push(i)
-    }
-    i++
-  }
-  result.length !== 0 ? console.log(result) : console.log(`${int} is a prime number`)
-}
+// function divisors(int) {
+//   let i = 0
+//   let result = []
+//   while (i !== int) {
+//     if (int % i === 0 && i !== int && i !== 1) {
+//       result.push(i)
+//     }
+//     i++
+//   }
+//   result.length !== 0 ? console.log(result) : console.log(`${int} is a prime number`)
+// }
 
-divisors(12)
-divisors(25)
-divisors(13)
+// divisors(12)
+// divisors(25)
+// divisors(13)
