@@ -538,8 +538,22 @@
 // divisors(13)
 
 
-function deleteNth( arr, n) {
+function deleteNth(arr, n) {
   //
+  const counts = {}
+  const result = []
+
+  for (const e of arr) {
+    if (!counts[e]){
+      counts[e] = 0
+    }
+
+    if (counts[e] < n) {
+      result.push(e)
+      counts[e]++
+    }
+  }
+  console.log(result)
 }
 
 deleteNth([20,37,20,21], 1)
