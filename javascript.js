@@ -560,17 +560,17 @@
 // deleteNth([1,1,3,3,7,2,2,2,2], 3)
 // deleteNth([12,39,19,39,39,19,12], 1)
 
-function generateHashtag( str ) {
-  let words = str.split(" ")
-  let  w = words.map(e => 
-    e.charAt(0).toUpperCase() + e.slice((1))
-    ).join("")
-  w.length > 120 || w.length < 1 ? 
-  console.log("false")
-  :
-  console.log(`#${w}`)
-}
+// function generateHashtag( str ) {
+//   let words = str.split(" ")
+//   let  w = words.map(e => 
+//     e.charAt(0).toUpperCase() + e.slice((1))
+//     ).join("")
+//   w.length > 120 || w.length < 1 ? 
+//   console.log("false")
+//   :
+//   console.log(`#${w}`)
+// }
 
-generateHashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat")
-generateHashtag("Do We have A Hashtag")
-generateHashtag("Codewars is nice")
+// generateHashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat")
+// generateHashtag("Do We have A Hashtag")
+// generateHashtag("Codewars is nice")
