@@ -574,3 +574,12 @@
 // generateHashtag("Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat")
 // generateHashtag("Do We have A Hashtag")
 // generateHashtag("Codewars is nice")
+
+
+function duplicateEncode(word) {
+  return ' '
+}
+
+duplicateEncode("din")
+duplicateEncode("recede")
+duplicateEncode("(( @")
