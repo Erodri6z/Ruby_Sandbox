@@ -581,7 +581,7 @@ function duplicateEncode(word) {
   let encoded = []
 
   stringArr.forEach(e => {
-    stringArr.filter(i => i === e).length > 1 ?
+    stringArr.filter(i => i.toUpperCase() === e.toUpperCase()).length > 1 ?
     encoded.push(")")
     :
     encoded.push("(")
@@ -592,4 +592,5 @@ function duplicateEncode(word) {
 
 duplicateEncode("din")
 duplicateEncode("recede")
+duplicateEncode("Success")
 duplicateEncode("(( @")
