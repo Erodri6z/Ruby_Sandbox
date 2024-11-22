@@ -576,21 +576,21 @@
 // generateHashtag("Codewars is nice")
 
 
-function duplicateEncode(word) {
-  let stringArr = word.split("")
-  let encoded = []
+// function duplicateEncode(word) {
+//   let stringArr = word.split("")
+//   let encoded = []
 
-  stringArr.forEach(e => {
-    stringArr.filter(i => i.toUpperCase() === e.toUpperCase()).length > 1 ?
-    encoded.push(")")
-    :
-    encoded.push("(")
-  });
+//   stringArr.forEach(e => {
+//     stringArr.filter(i => i.toUpperCase() === e.toUpperCase()).length > 1 ?
+//     encoded.push(")")
+//     :
+//     encoded.push("(")
+//   });
 
-  console.log(encoded.join(""))
-}
+//   console.log(encoded.join(""))
+// }
 
-duplicateEncode("din")
-duplicateEncode("recede")
-duplicateEncode("Success")
-duplicateEncode("(( @")
+// duplicateEncode("din")
+// duplicateEncode("recede")
+// duplicateEncode("Success")
+// duplicateEncode("(( @")
