@@ -577,7 +577,17 @@
 
 
 function duplicateEncode(word) {
-  return ' '
+  let stringArr = word.split("")
+  let encoded = []
+
+  stringArr.forEach(e => {
+    stringArr.filter(i => i === e).length > 1 ?
+    encoded.push(")")
+    :
+    encoded.push("(")
+  });
+
+  console.log(encoded.join(""))
 }
 
 duplicateEncode("din")
