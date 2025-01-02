@@ -595,13 +595,21 @@
 // duplicateEncode("Success")
 // duplicateEncode("(( @")
 
-function order(words){
-  let compareFm = (a, b) => a.replace(/\D/g, '') - b.replace(/\D/g, '')
-  let arr = words.split(" ")
-  let result = arr.sort(compareFm).join(" ")
-  console.log(result)
+// function order(words){
+//   let compareFm = (a, b) => a.replace(/\D/g, '') - b.replace(/\D/g, '')
+//   let arr = words.split(" ")
+//   let result = arr.sort(compareFm).join(" ")
+//   console.log(result)
+// }
+
+// order("is2 Thi1s T4est 3a")
+// order("4of Fo1r pe6ople g3ood th5e the2")
+// order("")
+
+
+function triangle(row) {
 }
 
-order("is2 Thi1s T4est 3a")
-order("4of Fo1r pe6ople g3ood th5e the2")
-order("")
+triangle('codewars')
+triangle('youhavechosentotranslatethiskata')
+triangle('b')
