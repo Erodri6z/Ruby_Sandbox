@@ -612,21 +612,22 @@ function triangle(row) {
   let rowArr = row.split("") 
   
   
-  while (rowArr.length >= 1) {
+  while (rowArr.length !== 1) {
     let arr = []
     console.log(rowArr)
     for (let i = 0; i < rowArr.length - 1; i++){
       let num = alpha.indexOf(rowArr[i]) + alpha.indexOf(rowArr[i + 1]) + 1
-      if (num > 26) {
+      if (num >= 26) {
         num -= 26
       }
       arr.push(alpha[num])
     }
     rowArr = arr
   }
-  return rowArr[0]
+  console.log(rowArr[0])
 }
 
-triangle('codewars')
+// triangle('codewars')
 // triangle('youhavechosentotranslatethiskata')
+triangle('triangle')
 // triangle('b')
