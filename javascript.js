@@ -633,9 +633,7 @@
 // // triangle('b')
 
 function stringToArray(string){
-
-	// code code code
-
+  console.log(string.split(" "))
 }
 
 stringToArray("Robin Singh")
