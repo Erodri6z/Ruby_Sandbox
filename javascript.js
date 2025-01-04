@@ -632,9 +632,9 @@
 // triangle('triangle')
 // // triangle('b')
 
-function stringToArray(string){
-  console.log(string.split(" "))
-}
+// function stringToArray(string){
+//   console.log(string.split(" "))
+// }
 
-stringToArray("Robin Singh")
-stringToArray("I love arrays they are my favorite")
+// stringToArray("Robin Singh")
+// stringToArray("I love arrays they are my favorite")
