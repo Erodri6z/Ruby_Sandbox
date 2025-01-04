@@ -631,3 +631,12 @@
 // // triangle('youhavechosentotranslatethiskata')
 // triangle('triangle')
 // // triangle('b')
+
+function stringToArray(string){
+
+	// code code code
+
+}
+
+stringToArray("Robin Singh")
+stringToArray("I love arrays they are my favorite")
