@@ -638,3 +638,11 @@
 
 // stringToArray("Robin Singh")
 // stringToArray("I love arrays they are my favorite")
+
+function digPow(n, p){
+  // ...
+}
+
+digPow(89, 1)
+digPow(92, 1)
+digPow(46288, 3)
