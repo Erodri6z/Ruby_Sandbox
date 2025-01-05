@@ -639,19 +639,19 @@
 // stringToArray("Robin Singh")
 // stringToArray("I love arrays they are my favorite")
 
-function digPow(n, p){
-  let total = 0
-  let arr = n.toString().split("")
-  let k = 0
+// function digPow(n, p){
+//   let total = 0
+//   let arr = n.toString().split("")
+//   let k = 0
   
-  for (let i = 0; i < arr.length; i++) {
-    total = total + (parseInt(arr[i]) ** (p + i))
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     total = total + (parseInt(arr[i]) ** (p + i))
+//   }
 
-  k = total / n 
-  console.log(k === Math.floor(k) ? k : -1)
-}
+//   k = total / n 
+//   console.log(k === Math.floor(k) ? k : -1)
+// }
 
-digPow(89, 1)
-digPow(92, 1)
-digPow(46288, 3)
+// digPow(89, 1)
+// digPow(92, 1)
+// digPow(46288, 3)
