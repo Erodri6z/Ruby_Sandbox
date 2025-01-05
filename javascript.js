@@ -640,7 +640,14 @@
 // stringToArray("I love arrays they are my favorite")
 
 function digPow(n, p){
-  // ...
+  let total = 0
+  let arr = n.toString().split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    total = total + (parseInt(arr[i]) ** (p + i))
+  }
+  let k = total / n 
+  console.log(k >= 1 ? k : -1)
 }
 
 digPow(89, 1)
