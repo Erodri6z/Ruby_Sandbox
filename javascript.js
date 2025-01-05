@@ -641,13 +641,15 @@
 
 function digPow(n, p){
   let total = 0
-  let arr = n.toString().split("");
-
+  let arr = n.toString().split("")
+  let k = 0
+  
   for (let i = 0; i < arr.length; i++) {
     total = total + (parseInt(arr[i]) ** (p + i))
   }
-  let k = total / n 
-  console.log(k >= 1 ? k : -1)
+
+  k = total / n 
+  console.log(k === Math.floor(k) ? k : -1)
 }
 
 digPow(89, 1)
