@@ -656,11 +656,11 @@
 // digPow(92, 1)
 // digPow(46288, 3)
 
-function camelize(str) {
-  console.log(str.toLowerCase().split(/ |[^a-zA-Z0-9]/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(""))
-}
+// function camelize(str) {
+//   console.log(str.toLowerCase().split(/ |[^a-zA-Z0-9]/).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(""))
+// }
 
-camelize("cODE warS")
-camelize("cODE-warS")
+// camelize("cODE warS")
+// camelize("cODE-warS")
 
 
