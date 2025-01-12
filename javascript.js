@@ -663,4 +663,9 @@
 // camelize("cODE warS")
 // camelize("cODE-warS")
 
+function validBraces(braces){
+  //TODO 
+}
 
+validBraces("()))")
+validBraces("([{}])")
