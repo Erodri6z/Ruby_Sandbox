@@ -645,7 +645,7 @@
 //   let k = 0
   
 //   for (let i = 0; i < arr.length; i++) {
-//     total = total + (parseInt(arr[i]) ** (p + i))
+//     total = total + (parseInt(arr[i]) ** (p + i))            
 //   }
 
 //   k = total / n 
@@ -655,3 +655,10 @@
 // digPow(89, 1)
 // digPow(92, 1)
 // digPow(46288, 3)
+
+function camelize(str) {
+  //.....
+}
+
+camelize("cODE warS")
+
