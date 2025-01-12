@@ -657,8 +657,14 @@
 // digPow(46288, 3)
 
 function camelize(str) {
-  //.....
+  let string = str.toLowerCase().split(/,| |-/)
+  let result = string.map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join("")
+
+  console.log(result)
+  
 }
 
 camelize("cODE warS")
+camelize("cODE-warS")
+
 
