@@ -664,8 +664,30 @@
 // camelize("cODE-warS")
 
 function validBraces(braces){
-  //TODO 
+  let p = 0
+  let c = 0
+  let b = 0 
+  let braceArr = braces.split("")
+  for (let i = 0; i < braceArr.length; i++) {
+    if (braceArr[i] === "("){
+      p++
+    }
+    else if (braceArr[i] === "["){
+      c++
+    }else if (braceArr[i] === "{"){
+      b++
+    }else if (braceArr[i] === ")"){
+      p--
+    }
+    else if (braceArr[i] === "]"){
+      c--
+    }else if(braceArr[i] === "}"){
+      b--
+    }
+  }
+  console.log(c === 0 && b === 0 && p === 0)
 }
+
 
 validBraces("()))")
 validBraces("([{}])")
