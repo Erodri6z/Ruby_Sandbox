@@ -663,31 +663,31 @@
 // camelize("cODE warS")
 // camelize("cODE-warS")
 
-function validBraces(braces){
-  let p = 0
-  let c = 0
-  let b = 0 
+// function validBraces(braces){
+//   let p = 0
+//   let c = 0
+//   let b = 0 
 
-  for (let i = 0; i < braces.length; i++) {
-    if (braces[i] === "("){
-      p++
-    }
-    else if (braces[i] === "["){
-      c++
-    }else if (braces[i] === "{"){
-      b++
-    }else if (braces[i] === ")"){
-      p--
-    }
-    else if (braces[i] === "]"){
-      c--
-    }else if(braces[i] === "}"){
-      b--
-    }
-  }
-  console.log(c === 0 && b === 0 && p === 0)
-}
+//   for (let i = 0; i < braces.length; i++) {
+//     if (braces[i] === "("){
+//       p++
+//     }
+//     else if (braces[i] === "["){
+//       c++
+//     }else if (braces[i] === "{"){
+//       b++
+//     }else if (braces[i] === ")"){
+//       p--
+//     }
+//     else if (braces[i] === "]"){
+//       c--
+//     }else if(braces[i] === "}"){
+//       b--
+//     }
+//   }
+//   console.log(c === 0 && b === 0 && p === 0)
+// }
 
 
-validBraces("()))")
-validBraces("([{}])")
+// validBraces("()))")
+// validBraces("([{}])")
