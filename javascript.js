@@ -667,21 +667,21 @@ function validBraces(braces){
   let p = 0
   let c = 0
   let b = 0 
-  let braceArr = braces.split("")
-  for (let i = 0; i < braceArr.length; i++) {
-    if (braceArr[i] === "("){
+
+  for (let i = 0; i < braces.length; i++) {
+    if (braces[i] === "("){
       p++
     }
-    else if (braceArr[i] === "["){
+    else if (braces[i] === "["){
       c++
-    }else if (braceArr[i] === "{"){
+    }else if (braces[i] === "{"){
       b++
-    }else if (braceArr[i] === ")"){
+    }else if (braces[i] === ")"){
       p--
     }
-    else if (braceArr[i] === "]"){
+    else if (braces[i] === "]"){
       c--
-    }else if(braceArr[i] === "}"){
+    }else if(braces[i] === "}"){
       b--
     }
   }
