@@ -68,11 +68,11 @@
 # is_isogram('Alpha')
 
 
-def binary_array_to_number(arr)
+# def binary_array_to_number(arr)
+#   p arr.join.to_i(2)
+# end
 
-end
-
-binary_array_to_number([0,0,0,1])
-binary_array_to_number([1,0,0,1])
-binary_array_to_number([0,0,1,0])
+# binary_array_to_number([0,0,0,1])
+# binary_array_to_number([1,0,0,1])
+# binary_array_to_number([0,0,1,0])
 
