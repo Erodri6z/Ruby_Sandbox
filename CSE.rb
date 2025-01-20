@@ -76,12 +76,12 @@
 # binary_array_to_number([1,0,0,1])
 # binary_array_to_number([0,0,1,0])
 
-def is_anagram(test, original)
-  p test.downcase.chars.sort == original.downcase.chars.sort
-end
+# def is_anagram(test, original)
+#   p test.downcase.chars.sort == original.downcase.chars.sort
+# end
 
-is_anagram("bad", "dab")
-is_anagram("cam", "Mac")
-is_anagram("bread", "dread")
+# is_anagram("bad", "dab")
+# is_anagram("cam", "Mac")
+# is_anagram("bread", "dread")
 
 
