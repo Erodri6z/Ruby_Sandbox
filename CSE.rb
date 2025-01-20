@@ -85,18 +85,18 @@
 # is_anagram("bread", "dread")
 
 
-class String 
-  def toJadenCase
-    self.split(" ").map { |word|
-      word.capitalize
-  }.join(" ")
-  end
-end
+# class String 
+#   def toJadenCase
+#     self.split(" ").map { |word|
+#       word.capitalize
+#   }.join(" ")
+#   end
+# end
 
-def test 
-  p "code wars".toJadenCase
-  p "in the world".toJadenCase
-  p "i am learning Ruby".toJadenCase
-end
+# def test 
+#   p "code wars".toJadenCase
+#   p "in the world".toJadenCase
+#   p "i am learning Ruby".toJadenCase
+# end
 
-test()
+# test()
