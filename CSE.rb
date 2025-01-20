@@ -57,3 +57,9 @@
 # puts capitals('CodE WaRs')
 # puts capitals('aAbB')
 
+def is_isogram(str) 
+
+end
+
+is_isogram('Machine')
+is_isogram('Alpha')
