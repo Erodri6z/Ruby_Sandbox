@@ -87,11 +87,16 @@
 
 class String 
   def toJadenCase
-    
+    self.split(" ").map { |word|
+      word.capitalize
+  }.join(" ")
   end
 end
 
+def test 
+  p "code wars".toJadenCase
+  p "in the world".toJadenCase
+  p "i am learning Ruby".toJadenCase
+end
 
-"code wars".toJadenCase
-"in the world".toJadenCase
-"i am learning Ruby".toJadenCase
+test()
