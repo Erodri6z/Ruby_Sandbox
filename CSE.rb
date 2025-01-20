@@ -77,7 +77,7 @@
 # binary_array_to_number([0,0,1,0])
 
 def is_anagram(test, original)
-
+  p test.downcase.chars.sort == original.downcase.chars.sort
 end
 
 is_anagram("bad", "dab")
