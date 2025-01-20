@@ -50,9 +50,9 @@
 
 
 def capitals(words)
-
+  p (words.chars.each_with_index.select { |c,_i| c.match(/[A-Z]/)}.map {|_c, i| i})
 end
 
 
-puts capitals('CodEWaRs')
+puts capitals('CodE WaRs')
 puts capitals('aAbB')
