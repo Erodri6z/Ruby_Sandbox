@@ -57,12 +57,22 @@
 # puts capitals('CodE WaRs')
 # puts capitals('aAbB')
 
-def is_isogram(str) 
-  str.chars.each do |c| 
-    p false if str.downcase.chars.count(c) > 1
-  end
-  p true
+# def is_isogram(str) 
+#   str.chars.each do |c| 
+#     p false if str.downcase.chars.count(c) > 1
+#   end
+#   p true
+# end
+
+# is_isogram('Machine')
+# is_isogram('Alpha')
+
+
+def binary_array_to_number(arr)
+
 end
 
-is_isogram('Machine')
-is_isogram('Alpha')
+binary_array_to_number([0,0,0,1])
+binary_array_to_number([1,0,0,1])
+binary_array_to_number([0,0,1,0])
+
