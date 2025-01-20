@@ -85,3 +85,13 @@
 # is_anagram("bread", "dread")
 
 
+class String 
+  def toJadenCase
+    
+  end
+end
+
+
+"code wars".toJadenCase
+"in the world".toJadenCase
+"i am learning Ruby".toJadenCase
