@@ -725,7 +725,12 @@
 // countSmileys([':D',':~)',';~D',':)'])
 
 function persistence(num) {
-  //code me
+  let count = 0
+  while (num.toString().length > 1) {
+    num = num.toString().split("").reduce((p , d) => p * parseInt(d), 1)
+    count++
+  }
+  console.log(count)
 }
 
 persistence(39)
