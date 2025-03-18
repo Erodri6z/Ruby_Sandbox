@@ -691,3 +691,12 @@
 
 // validBraces("()))")
 // validBraces("([{}])")
+
+
+function countSmileys(arr) {
+  return 0;
+}
+
+countSmileys([';]', ':[', ';*', ':$', ';-D'])
+
+countSmileys([':D',':~)',';~D',':)'])
