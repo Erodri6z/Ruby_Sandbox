@@ -694,7 +694,34 @@
 
 
 function countSmileys(arr) {
-  return 0;
+  let count = 0
+  for (let i = 0; i < arr.length; i++) {
+    let smile = arr[i].split("")
+    // console.log(smile)
+    if (smile.length === 3)
+    {
+      if ((smile[0] === ":" || smile[0] === ";") 
+        && 
+        (smile[1] === "-" || smile[1] === "~")
+        && 
+        (smile[2]=== ")" || smile[2] === "D") ){
+          console.log(smile, "yes, 3 len")
+          count++
+      } else {
+        console.log(smile, "no")
+      }
+    } else if (smile.length === 2){
+      if ((smile[0] === ":" || smile[0] === ";" )
+        && 
+        (smile[1]=== ")" || smile[1] === "D" )) {
+          console.log(smile, "yes, 2 len")
+          count++
+      } else {
+        console.log(smile, "no")
+      }
+    } 
+  }
+  console.log(count)
 }
 
 countSmileys([';]', ':[', ';*', ':$', ';-D'])
