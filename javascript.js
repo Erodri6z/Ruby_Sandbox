@@ -693,33 +693,33 @@
 // validBraces("([{}])")
 
 
-function countSmileys(arr) {
-  let count = 0
-  for (let i = 0; i < arr.length; i++) {
-    let smile = arr[i].split("")
-    if (smile.length === 3)
-    {
-      if (
-        (smile[0] === ":" || smile[0] === ";") 
-        && 
-        (smile[1] === "-" || smile[1] === "~")
-        && 
-        (smile[2]=== ")" || smile[2] === "D") 
-        ){
-          console.log(smile, "yes, 3 len")
-          count++
-        }
-      } else if (smile.length === 2){
-        if ((smile[0] === ":" || smile[0] === ";" )
-        && 
-        (smile[1]=== ")" || smile[1] === "D" )) {
-          count++
-      }
-    } 
-  }
-  console.log(count)
-}
+// function countSmileys(arr) {
+//   let count = 0
+//   for (let i = 0; i < arr.length; i++) {
+//     let smile = arr[i].split("")
+//     if (smile.length === 3)
+//     {
+//       if (
+//         (smile[0] === ":" || smile[0] === ";") 
+//         && 
+//         (smile[1] === "-" || smile[1] === "~")
+//         && 
+//         (smile[2]=== ")" || smile[2] === "D") 
+//         ){
+//           console.log(smile, "yes, 3 len")
+//           count++
+//         }
+//       } else if (smile.length === 2){
+//         if ((smile[0] === ":" || smile[0] === ";" )
+//         && 
+//         (smile[1]=== ")" || smile[1] === "D" )) {
+//           count++
+//       }
+//     } 
+//   }
+//   console.log(count)
+// }
 
-countSmileys([';]', ':[', ';*', ':$', ';-D'])
+// countSmileys([';]', ':[', ';*', ':$', ';-D'])
 
-countSmileys([':D',':~)',';~D',':)'])
+// countSmileys([':D',':~)',';~D',':)'])
