@@ -723,3 +723,11 @@
 // countSmileys([';]', ':[', ';*', ':$', ';-D'])
 
 // countSmileys([':D',':~)',';~D',':)'])
+
+function persistence(num) {
+  //code me
+}
+
+persistence(39)
+persistence(4)
+persistence(999)
