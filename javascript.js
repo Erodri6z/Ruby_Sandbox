@@ -736,3 +736,13 @@
 // persistence(39)
 // persistence(4)
 // persistence(999)
+
+
+function arithmetic(a, b, operator){
+  //your code here!
+}
+
+arithmetic(1, 2, "add")
+arithmetic(8, 2, "subtract")
+arithmetic(5, 2, "multiply")
+arithmetic(8, 2, "divide")
