@@ -757,18 +757,20 @@
 // console.log(arithmetic(8, 2, "divide"))
 
 function SeriesSum(n) {
-  // let dec = 1 / 4
   let count = 1
   let m = 0
   let result = 1
+  if (n === 1 || n === 0) return n.toFixed(2)
   while (m !== n) {
     result = result + 1/(4 + (3 * m))
     count++
     m++ 
   }
-  return result
+
+  return (Math.floor(result * 100) / 100).toString()
 }
 
+console.log(SeriesSum(0))
 console.log(SeriesSum(1))
 console.log(SeriesSum(2))
 console.log(SeriesSum(4))
