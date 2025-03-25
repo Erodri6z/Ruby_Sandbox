@@ -760,14 +760,14 @@ function SeriesSum(n) {
   let count = 1
   let m = 0
   let result = 1
-  if (n === 1 || n === 0) return n.toFixed(2)
+  if (n <= 1 ) return n.toFixed(2)
   while (m !== n) {
-    result = result + 1/(4 + (3 * m))
+    result+= 1/(4 + (3 * m))
     count++
     m++ 
   }
 
-  return (Math.floor(result * 100) / 100).toString()
+  return result.toFixed(2).toString()
 }
 
 console.log(SeriesSum(0))
