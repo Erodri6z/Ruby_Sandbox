@@ -757,7 +757,16 @@
 // console.log(arithmetic(8, 2, "divide"))
 
 function SeriesSum(n) {
-  // Happy Coding ^_^
+  // let dec = 1 / 4
+  let count = 1
+  let m = 0
+  let result = 1
+  while (m !== n) {
+    result = result + 1/(4 + (3 * m))
+    count++
+    m++ 
+  }
+  return result
 }
 
 console.log(SeriesSum(1))
