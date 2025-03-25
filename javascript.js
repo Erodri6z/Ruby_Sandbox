@@ -755,3 +755,11 @@
 // console.log(arithmetic(8, 2, "subtract"))
 // console.log(arithmetic(5, 2, "multiply"))
 // console.log(arithmetic(8, 2, "divide"))
+
+function SeriesSum(n) {
+  // Happy Coding ^_^
+}
+
+console.log(SeriesSum(1))
+console.log(SeriesSum(2))
+console.log(SeriesSum(4))
