@@ -756,21 +756,23 @@
 // console.log(arithmetic(5, 2, "multiply"))
 // console.log(arithmetic(8, 2, "divide"))
 
-function SeriesSum(n) {
-  let count = 1
-  let m = 0
-  let result = 0
-  if (n <= 1 ) return n.toFixed(2)
-  while (m !== n) {
-  result += 1/(1 + 3 * m)
-  m++ 
-  count++
-  }
+// function SeriesSum(n) {
+//   let count = 1
+//   let m = 0
+//   let result = 0
 
-  return result.toFixed(2).toString()
-}
+//   if (n <= 1 ) return n.toFixed(2)
+  
+//   while (m !== n) {
+//   result += 1/(1 + 3 * m)
+//   m++ 
+//   count++
+//   }
 
-console.log(SeriesSum(0))
-console.log(SeriesSum(1))
-console.log(SeriesSum(2))
-console.log(SeriesSum(4))
+//   return result.toFixed(2).toString()
+// }
+
+// console.log(SeriesSum(0))
+// console.log(SeriesSum(1))
+// console.log(SeriesSum(2))
+// console.log(SeriesSum(4))
