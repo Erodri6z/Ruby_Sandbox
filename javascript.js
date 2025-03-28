@@ -776,3 +776,11 @@
 // console.log(SeriesSum(1))
 // console.log(SeriesSum(2))
 // console.log(SeriesSum(4))
+
+function oddOrEven(array) {
+  //enter code here
+}
+
+console.log(oddOrEven([0, 2, 1]))
+console.log(oddOrEven([2, -5, 1]))
+console.log(oddOrEven([0, 1, 1]))
