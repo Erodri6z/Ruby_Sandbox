@@ -777,10 +777,17 @@
 // console.log(SeriesSum(2))
 // console.log(SeriesSum(4))
 
-function oddOrEven(array) { 
-  return array.reduce((a, b) => a + b) % 2 === 0? "even" : "odd"
-}
+// function oddOrEven(array) { 
+//   if (array.length > 0){ 
+//     return array.reduce((a, b) => a + b) % 2 === 0? "even" : "odd"
+//   } else {
+//     return "even"
+//   }
+// }
 
-console.log(oddOrEven([0, 2, 1]))
-console.log(oddOrEven([2, -5, 1]))
-console.log(oddOrEven([0, 1, 1]))
+// console.log(oddOrEven([]))
+// console.log(oddOrEven([1]))
+// console.log(oddOrEven([2, -5, 1]))
+// console.log(oddOrEven([0, 1, 1]))
+
+
