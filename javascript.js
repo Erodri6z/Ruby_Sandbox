@@ -778,7 +778,12 @@
 // console.log(SeriesSum(4))
 
 function oddOrEven(array) {
-  //enter code here
+  let sum = array.reduce((a, b) => a + b)
+  if (sum % 2 === 0) {
+    return "even"
+  }else {
+    return "odd"
+  }
 }
 
 console.log(oddOrEven([0, 2, 1]))
