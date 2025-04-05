@@ -792,7 +792,7 @@
 
 function incrementString (strng) {
   // this breaks up the string into an arr, separrated by the being a str or int
-  let strngArr = strng.split(/(\d+)/).filter(item => item !== "")
+  let strngArr = [...strng.matchAll(/(\d+)/g)]
   console.log("StrngArr : ", strngArr)
   // only returns the numbers in string form
   let nArr = strngArr.filter(i => parseInt(i))
@@ -801,6 +801,17 @@ function incrementString (strng) {
   let lastMatch = nArr[nArr.length - 1]
   console.log("last match: ", lastMatch)
   // todo: start index of the last match
+  let numberPart = lastMatch[0]
+  let start = lastMatch.index
+  let end = start + numberPart.length
+  console.log("start:", start)
+  console.log("end", end)
+
+  let inc = (parseInt(numberPart) + 1).toString().padStart(numberPart.length, "0")
+
+  return strng.slice(0, start) + inc + strng.slice(end)
+
+  
 
   // todo: end index for the string, each strng is going to be diffrent and you shouild use it when doing a slice instead of replace
 
@@ -810,7 +821,7 @@ function incrementString (strng) {
   // return strng.replace(n[n.length-1], int.toString())
 }
 
-console.log(incrementString("foo"))
+console.log(incrementString("foo222"))
 console.log(incrementString("foo12000"))
 console.log(incrementString("foo1"))
 console.log(incrementString("fo99obar099aa"))
