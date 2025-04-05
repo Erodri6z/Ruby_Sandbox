@@ -791,25 +791,19 @@
 // console.log(oddOrEven([0, 1, 1]))
 
 function incrementString (strng) {
-  // this breaks up the string into an arr, separrated by the being a str or int
   let strngArr = [...strng.matchAll(/(\d+)/g)]
-  console.log("StrngArr : ", strngArr)
-  // only returns the numbers in string form
+
+  if (strngArr.length === 0) return `${strng}1`
   let nArr = strngArr.filter(i => parseInt(i))
-  console.log("nArr : ", nArr)
-  // only returns the last number aka the one that needs to be increased by 1
   let lastMatch = nArr[nArr.length - 1]
-  console.log("last match: ", lastMatch)
-  // todo: start index of the last match
   let numberPart = lastMatch[0]
   let start = lastMatch.index
   let end = start + numberPart.length
-  console.log("start:", start)
-  console.log("end", end)
+
 
   let inc = (parseInt(numberPart) + 1).toString().padStart(numberPart.length, "0")
 
-  return strng.slice(0, start) + inc + strng.slice(end)
+  return `${strng.slice(0, start)}${inc}${strng.slice(end)}`
 
   
 
@@ -821,7 +815,7 @@ function incrementString (strng) {
   // return strng.replace(n[n.length-1], int.toString())
 }
 
-console.log(incrementString("foo222"))
+console.log(incrementString("foo"))
 console.log(incrementString("foo12000"))
 console.log(incrementString("foo1"))
 console.log(incrementString("fo99obar099aa"))
