@@ -790,4 +790,12 @@
 // console.log(oddOrEven([2, -5, 1]))
 // console.log(oddOrEven([0, 1, 1]))
 
+function incrementString (strng) {
+  // return incrementedString
+}
+
+console.log(incrementString("foo"))
+console.log(incrementString("foo12"))
+console.log(incrementString("foo"))
+console.log(incrementString("fo99obar099"))
 
