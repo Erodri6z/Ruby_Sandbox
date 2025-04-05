@@ -791,11 +791,16 @@
 // console.log(oddOrEven([0, 1, 1]))
 
 function incrementString (strng) {
-  // return incrementedString
+  let arr = strng.split(/(\d+)/).filter(item => item !== "")
+  let n = arr.filter(i => parseInt(i))
+  let int = parseInt(n[n.length - 1]) + 1
+  console.log("int : ", int)
+  console.log(n)
+  return strng.replace(n[n.length-1], int.toString())
 }
 
 console.log(incrementString("foo"))
-console.log(incrementString("foo12"))
-console.log(incrementString("foo"))
+console.log(incrementString("foo12000"))
+console.log(incrementString("foo1"))
 console.log(incrementString("fo99obar099"))
 
