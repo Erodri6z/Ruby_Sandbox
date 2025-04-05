@@ -791,16 +791,27 @@
 // console.log(oddOrEven([0, 1, 1]))
 
 function incrementString (strng) {
-  let arr = strng.split(/(\d+)/).filter(item => item !== "")
-  let n = arr.filter(i => parseInt(i))
-  let int = parseInt(n[n.length - 1]) + 1
-  console.log("int : ", int)
-  console.log(n)
-  return strng.replace(n[n.length-1], int.toString())
+  // this breaks up the string into an arr, separrated by the being a str or int
+  let strngArr = strng.split(/(\d+)/).filter(item => item !== "")
+  console.log("StrngArr : ", strngArr)
+  // only returns the numbers in string form
+  let nArr = strngArr.filter(i => parseInt(i))
+  console.log("nArr : ", nArr)
+  // only returns the last number aka the one that needs to be increased by 1
+  let lastMatch = nArr[nArr.length - 1]
+  console.log("last match: ", lastMatch)
+  // todo: start index of the last match
+
+  // todo: end index for the string, each strng is going to be diffrent and you shouild use it when doing a slice instead of replace
+
+  // todo: factor in the possibily of the stng not having any number, in which case just add a 1
+  // don't forget to use padstart to avoid 001 to become just 2
+  // should theorethically be as easy as splicing the strng from start index and end index
+  // return strng.replace(n[n.length-1], int.toString())
 }
 
 console.log(incrementString("foo"))
 console.log(incrementString("foo12000"))
 console.log(incrementString("foo1"))
-console.log(incrementString("fo99obar099"))
+console.log(incrementString("fo99obar099aa"))
 
