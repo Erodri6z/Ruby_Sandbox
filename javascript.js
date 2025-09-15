@@ -790,25 +790,33 @@
 // console.log(oddOrEven([2, -5, 1]))
 // console.log(oddOrEven([0, 1, 1]))
 
-function incrementString (strng) {
-  let strngArr = [...strng.matchAll(/\d+/g)]
+// function incrementString (strng) {
+//   let strngArr = [...strng.matchAll(/\d+/g)]
 
-  if (strngArr.length === 0) return `${strng}1`
+//   if (strngArr.length === 0) return `${strng}1`
 
-  console.log(strngArr)
+//   console.log(strngArr)
 
-  let lastMatch = strngArr[strngArr.length - 1]
-  let numberPart = lastMatch[0]
-  let start = lastMatch.index
-  let end = start + numberPart.length
+//   let lastMatch = strngArr[strngArr.length - 1]
+//   let numberPart = lastMatch[0]
+//   let start = lastMatch.index
+//   let end = start + numberPart.length
 
-  let inc = (parseInt(numberPart)+1).toString().padStart(numberPart.length, "0")
+//   let inc = (parseInt(numberPart)+1).toString().padStart(numberPart.length, "0")
 
-  return `${strng.slice(0, start)}${inc}${strng.slice(end)}`
+//   return `${strng.slice(0, start)}${inc}${strng.slice(end)}`
+// }
+
+// console.log(incrementString("foo000"))
+// console.log(incrementString("foo12000"))
+// console.log(incrementString("foo1"))
+// console.log(incrementString("fo99obar099aa"))
+
+
+function reverseVowels(str) {
+
 }
 
-console.log(incrementString("foo000"))
-console.log(incrementString("foo12000"))
-console.log(incrementString("foo1"))
-console.log(incrementString("fo99obar099aa"))
-
+reverseVowels("Hello!")
+reverseVowels("Tomatoes")
+reverseVowels("Reverse it All In A string")
