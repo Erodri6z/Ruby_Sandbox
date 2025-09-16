@@ -814,6 +814,18 @@
 
 
 function reverseVowels(str) {
+  let vowels = str.split("").filter(a => /[aeiou]/i.test(a))
+  let reverse = vowels.reverse()
+  let strArr = str.split("")
+  let count = 0
+
+  for (i = 0; i < strArr.length ; i++) {
+    if (/[aeiou]/i.test(strArr[i])){
+      strArr[i] = reverse[count] 
+      count++
+    }
+  }
+  console.log(strArr)
 
 }
 
