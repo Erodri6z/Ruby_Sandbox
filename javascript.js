@@ -813,23 +813,30 @@
 // console.log(incrementString("fo99obar099aa"))
 
 
-function reverseVowels(str) {
-  let strArr = str.split("")
-  let vowels = strArr.filter(a => /[aeiou]/i.test(a))
-  let reverse = vowels.reverse()
-  let count = 0
+// function reverseVowels(str) {
+//   let strArr = str.split("")
+//   let vowels = strArr.filter(a => /[aeiou]/i.test(a))
+//   let reverse = vowels.reverse()
+//   let count = 0
+//   for (let i = 0; i < strArr.length ; i++) {
+//     if (/[aeiou]/i.test(strArr[i])){
+//       strArr[i] = reverse[count] 
+//       count++
+//     }
+//   }
 
-  for (let i = 0; i < strArr.length ; i++) {
-    if (/[aeiou]/i.test(strArr[i])){
-      strArr[i] = reverse[count] 
-      count++
-    }
-  }
+//   console.log(strArr.join(""))
 
-  console.log(strArr.join(""))
+// }
+
+// reverseVowels("Hello!")
+// reverseVowels("Tomatoes")
+// reverseVowels("Reverse it All In A string")
+
+function descendingOrder(n) {
+  return n.toString().split("").map(Number).sort((a,b) => b - a).join()
 
 }
 
-reverseVowels("Hello!")
-reverseVowels("Tomatoes")
-reverseVowels("Reverse it All In A string")
+console.log(descendingOrder(121))
+console.log(descendingOrder(623873021))
