@@ -834,7 +834,13 @@
 // reverseVowels("Reverse it All In A string")
 
 function descendingOrder(n) {
-  return n.toString().split("").map(Number).sort((a,b) => b - a).join()
+  return Number(
+    n.toString()
+    .split("")
+    .map(Number)
+    .sort((a,b) => b - a)
+    .join("")
+    )
 
 }
 
