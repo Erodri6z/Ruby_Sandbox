@@ -833,16 +833,16 @@
 // reverseVowels("Tomatoes")
 // reverseVowels("Reverse it All In A string")
 
-function descendingOrder(n) {
-  return Number(
-    n.toString()
-    .split("")
-    .map(Number)
-    .sort((a,b) => b - a)
-    .join("")
-    )
+// function descendingOrder(n) {
+//   return Number(
+//     n.toString()
+//     .split("")
+//     .map(Number)
+//     .sort((a,b) => b - a)
+//     .join("")
+//     )
 
-}
+// }
 
-console.log(descendingOrder(121))
-console.log(descendingOrder(623873021))
+// console.log(descendingOrder(121))
+// console.log(descendingOrder(623873021))
